@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- Ejemplo «reel-pip-escena» · motion-graphics-claude · familia 5 (reels con persona hablando)
+     En la palabra «entra», la cámara empuja hacia la persona (zoom a través, con desenfoque de movimiento) y la persona
+     se encoge a un PiP redondeado abajo a la izquierda; detrás entra una escena a pantalla completa (título + 3 tarjetas
+     que se destacan con ✓ al nombrarlas). En la palabra «sale», el PiP vuelve a pantalla completa con la curva al revés.
+     La cara nunca se corta: el zoom se hace desde el centro de la cara y el PiP enseña el encuadre entero.
+     Esta escena LLEVA la persona dentro (no es una capa): render normal y reel.py componer le pone el audio original.
+     Parámetros: "entra", "sale" (palabras que disparan la transición), "etiqueta", "titulo" (*palabra* = acento),
+       "pasos": [{palabra, texto}] (se destacan al decirlos)
+     Render: node scripts/render.mjs video reel-pip-escena --calidad hd → python scripts/reel.py componer reel-pip-escena -->
+<link rel="stylesheet" href="../motor/estilo.css">
+<script src="../motor/kit-escenas.js"></script>
+<script src="../motor/motor.js"></script>
+<script src="../motor/reel.js"></script>
+<style>
+  .pip-eti { font:700 30px/1 var(--mono); letter-spacing:.2em; color:var(--acento); text-transform:uppercase; }
+  .pip-tit { font:800 104px/1.02 var(--fuente-titulo, var(--fuente)); letter-spacing:-.04em; color:var(--texto); width:960px; }
+  .pip-tit em { font-style:normal; color:var(--acento); }
+  .pip-paso { display:flex; align-items:center; gap:24px; width:960px; padding:30px 34px; border-radius:calc(var(--radio) * 1.5);
+    background:var(--tarjeta); border:1.5px solid rgba(var(--claro), .10); box-shadow:0 24px 60px rgba(var(--sombra), .45);
+    font:700 46px/1.1 var(--fuente); color:var(--texto); }
+  .pip-paso .reel-ico { width:72px; height:72px; background:rgba(var(--claro), .08); color:var(--mute); }
+  .pip-paso.on { border-color:var(--acento); box-shadow:0 0 0 2px var(--acento), 0 0 60px rgba(var(--halo), .35); }
+  .pip-paso.on .reel-ico { background:var(--acento); color:var(--tinta); }
+  .reel-persona { border-radius:0; box-shadow:0 30px 80px rgba(0,0,0,.6); }
+</style>
+</head><body>
+<script id="params" type="application/json">
+{
+  "entra": "siguiente nivel",
+  "sale": "proactiva",
+  "etiqueta": "Claude Duet",
+  "titulo": "El siguiente *nivel* de la IA",
+  "pasos": [
+    { "palabra": "espera", "texto": "No espera por ti" },
+    { "palabra": "empezar", "texto": "Empieza la tarea" },
+    { "palabra": "proactiva", "texto": "Es proactiva" }
+  ]
+}
+</script>
+<script>
+const P = JSON.parse(document.getElementById('params').textContent);
+escena({ duracion: REEL.dur, ancho: 1080, alto: 1920, fondo: 'marca', trama: { tipo: 'rejilla', intensidad: .8 }, degradado: { tipo: 'aurora', fuerza: .35 } }, (MG) => {
+  const C = MG.curvas, tA = REEL.t(P.entra) ?? 2, tB0 = REEL.t(P.sale), tB = Math.max(tA + 3, (tB0 ?? tA + 5) + 0.8);
+  const persona = REEL.persona(MG);                       // la toma, encima del fondo de la escena
+  if (persona) persona.style.zIndex = 3;
+  // escena de fondo
+  const eti = MG.el(`<div class="mg-abs pip-eti">${P.etiqueta}</div>`);
+  const tit = MG.el(`<div class="mg-abs pip-tit">${P.titulo.replace(/\*([^*]+)\*/g, '<em>$1</em>')}</div>`);
+  const pasos = P.pasos.map((p) => ({ ...p, t: REEL.t(p.palabra), el: MG.el(`<div class="mg-abs pip-paso"><span class="reel-ico">${VK.icono('check', 40, 'currentColor')}</span><span>${p.texto}</span></div>`) }));
+  REEL.apunta({ tipo: 'pip-escena', capa: 'pantalla-completa', texto: P.titulo, palabra: P.entra, desde: tA, hasta: tB + 0.7 });
+  // PiP: 30 % del tamaño, abajo a la izquierda (encima de los subtítulos)
+  const PIP = { s: 0.3, x: 60, y: 1920 - 1920 * 0.3 - 250, r: 120 };
+  const cx = REEL.cara.x + REEL.cara.w / 2, cy = REEL.cara.y + REEL.cara.h / 2;
+  return (t) => {
+    // 1) persona: empuje hacia la cara (0,22 s, entradaCubica) y se encoge al PiP (0,55 s, salidaQuint); a la vuelta, al revés
+    if (persona) {
+      const ida = C.entradaCubica(MG.k(t, tA - 0.22, tA)), enc = C.salidaQuint(MG.k(t, tA, tA + 0.55));
+      const vuelta = C.salidaQuint(MG.k(t, tB, tB + 0.6));
+      const pip = enc * (1 - vuelta);                                         // 0 = pantalla completa · 1 = PiP
+      const empuje = 1 + 0.14 * ida * (1 - enc);
+      const s = MG.lerp(1, PIP.s, pip) * empuje;
+      // el empuje se hace alrededor de la cara (no sale de cuadro); el PiP, desde la esquina
+      const x = MG.lerp(cx - cx * empuje, PIP.x, pip), y = MG.lerp(cy - cy * empuje, PIP.y, pip);
+      persona.style.transform = `translate(${x}px,${y}px) scale(${s})`;
+      persona.style.borderRadius = `${PIP.r * pip}px`;
+      const v = Math.abs(C.salidaQuint(MG.k(t, tA, tA + 0.55)) - C.salidaQuint(MG.k(t - MG.DT, tA, tA + 0.55))) + Math.abs(C.salidaQuint(MG.k(t, tB, tB + 0.6)) - C.salidaQuint(MG.k(t - MG.DT, tB, tB + 0.6)));
+      MG.desenfoca(persona, v * 260, v * 260 + ida * (1 - enc) * 6);
+    }
+    // 2) escena de fondo: llega desde muy cerca (zoom a través) y se va alejándose
+    const llega = C.salidaQuint(MG.k(t, tA - 0.05, tA + 0.7)), va = C.entradaCubica(MG.k(t, tB, tB + 0.5));
+    MG.vista.style.transformOrigin = '540px 760px';
+    MG.vista.style.transform = `scale(${(MG.lerp(2.2, 1, llega) * MG.lerp(1, 0.7, va) * (1 + 0.03 * MG.k(t, tA, tB))).toFixed(4)})`;
+    MG.vista.style.opacity = Math.min(llega * 1.6, 1 - va);
+    MG.desenfoca(MG.vista, 0, (1 - llega) * 24 + va * 16);
+    let e = MG.entra(eti, t, tA + 0.2, { dy: 50, curva: 'salidaQuint', d: 0.5 }); MG.pon(eti, 60 + e.x, 300 + e.y, e.s);
+    e = MG.entra(tit, t, tA + 0.3, { dy: 80, curva: 'salidaQuint', d: 0.55 }); MG.pon(tit, 60 + e.x, 360 + e.y, e.s);
+    pasos.forEach((p, i) => {
+      e = MG.entra(p.el, t, tA + 0.45 + i * 0.08, { dy: 120 });          // entran juntas (rebote natural)
+      MG.pon(p.el, 60 + e.x, 600 + i * 150 + e.y, e.s);
+      p.el.classList.toggle('on', p.t !== null && t >= p.t - 0.1);       // se destaca al decirlo
+    });
+  };
+});
+</script>
+</body></html>

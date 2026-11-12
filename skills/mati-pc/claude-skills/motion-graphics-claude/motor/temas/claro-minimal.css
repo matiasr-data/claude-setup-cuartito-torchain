@@ -1,0 +1,9 @@
+/* Tema «Claro minimal» (estilo de la guía de motion graphics). Aplica con --tema claro-minimal al renderizar, ?tema=claro-minimal en la vista previa
+   o "tema": "claro-minimal" en estilo.json. Tipografía: Sora. Curva por defecto: salidaQuint. Trama: nada. */
+:root { --tema:'claro-minimal'; --fondo:#F5F4F0; --fondo-rgb:245,244,240; --rejilla:#E9E7E1; --halo:47,91,255; --acento:#2F5BFF; --acento2:#2F5BFF;
+  --texto:#16151A; --mute:#6B6872; --tarjeta:#FFFFFF; --tarjeta2:#FFFFFF; --superficie:#E9E7E1; --tinta:#FFFFFF;
+  --claro:0,0,0; --sombra:60,50,80; --borde-tarjeta:rgba(22,21,26,.06); --sombra-tarjeta:rgba(30,30,60,.12);
+  --radio:18px; --fuente:'Sora', 'Sora', 'Inter', sans-serif; --fuente-titulo:'Sora', 'Inter', sans-serif; --fuente-texto:'Sora', 'Inter', sans-serif;
+  --curva:salidaQuint; }
+.mg-fondo-marca { background: radial-gradient(60% 48% at 50% 112%, rgba(var(--halo), .26), rgba(var(--halo), .08) 45%, transparent 72%),  var(--fondo); }
+.mg-tarjeta { border-radius: var(--radio); box-shadow: 0 26px 60px var(--sombra-tarjeta), 0 0 0 1px var(--borde-tarjeta); }

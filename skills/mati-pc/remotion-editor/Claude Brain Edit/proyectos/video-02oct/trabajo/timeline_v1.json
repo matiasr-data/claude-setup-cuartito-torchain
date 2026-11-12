@@ -1,0 +1,4141 @@
+{
+ "fps": 29.97002997002997,
+ "frames": 6999,
+ "duracion": 233.533,
+ "cara": {
+  "fx": 0.565,
+  "fy": 0.41
+ },
+ "camara": [
+  {
+   "f": 0,
+   "tipo": "corte",
+   "s": 1.5,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 1,
+   "tipo": "salida",
+   "s": 1.12,
+   "dur": 9,
+   "fijo": true
+  },
+  {
+   "f": 23,
+   "tipo": "punch",
+   "s": 1.26,
+   "dur": 5,
+   "fijo": true
+  },
+  {
+   "f": 73,
+   "tipo": "corte",
+   "s": 1.0,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 79,
+   "tipo": "corte",
+   "s": 1.3,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 90,
+   "tipo": "corte",
+   "s": 1.14,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 112,
+   "tipo": "corte",
+   "s": 1.03,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 142,
+   "tipo": "punch",
+   "s": 1.2,
+   "dur": 5,
+   "fijo": true
+  },
+  {
+   "f": 169,
+   "tipo": "salida",
+   "s": 1.06,
+   "dur": 7,
+   "fijo": true
+  },
+  {
+   "f": 211,
+   "tipo": "punch",
+   "s": 1.42,
+   "dur": 4,
+   "fijo": true
+  },
+  {
+   "f": 226,
+   "tipo": "corte",
+   "s": 1.265,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 283,
+   "tipo": "punch",
+   "s": 1.39,
+   "dur": 5,
+   "fijo": true
+  },
+  {
+   "f": 296,
+   "tipo": "corte",
+   "s": 1.06,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 347,
+   "tipo": "corte",
+   "s": 1.21,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 351,
+   "tipo": "suave",
+   "s": 1.2,
+   "dur": 26,
+   "fijo": true
+  },
+  {
+   "f": 376,
+   "tipo": "punch",
+   "s": 1.34,
+   "dur": 5,
+   "fijo": true
+  },
+  {
+   "f": 547,
+   "tipo": "corte",
+   "s": 1.1,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 628,
+   "tipo": "corte",
+   "s": 1.25,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 685,
+   "tipo": "corte",
+   "s": 1.38,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 719,
+   "tipo": "salida",
+   "s": 1.08,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 754,
+   "tipo": "punch",
+   "s": 1.18,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 790,
+   "tipo": "punch",
+   "s": 1.3,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 847,
+   "tipo": "salida",
+   "s": 1.0,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 911,
+   "tipo": "corte",
+   "s": 1.1,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 956,
+   "tipo": "corte",
+   "s": 1.28,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 1019,
+   "tipo": "salida",
+   "s": 1.08,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 1058,
+   "tipo": "corte",
+   "s": 1.22,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 1103,
+   "tipo": "punch",
+   "s": 1.37,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 1148,
+   "tipo": "corte",
+   "s": 1.2,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 1202,
+   "tipo": "corte",
+   "s": 1.08,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 1265,
+   "tipo": "punch",
+   "s": 1.4,
+   "dur": 4,
+   "fijo": true
+  },
+  {
+   "f": 1276,
+   "tipo": "corte",
+   "s": 1.12,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 1343,
+   "tipo": "corte",
+   "s": 1.27,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 1409,
+   "tipo": "corte",
+   "s": 1.14,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 1458,
+   "tipo": "salida",
+   "s": 1.04,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 1494,
+   "tipo": "punch",
+   "s": 1.2,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 1532,
+   "tipo": "punch",
+   "s": 1.35,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 1589,
+   "tipo": "corte",
+   "s": 1.26,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 1626,
+   "tipo": "corte",
+   "s": 1.06,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 1659,
+   "tipo": "punch",
+   "s": 1.2,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 1698,
+   "tipo": "corte",
+   "s": 1.04,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 1743,
+   "tipo": "punch",
+   "s": 1.24,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 1804,
+   "tipo": "corte",
+   "s": 1.32,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 1834,
+   "tipo": "corte",
+   "s": 1.1,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 1852,
+   "tipo": "corte",
+   "s": 1.2,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 1867,
+   "tipo": "corte",
+   "s": 1.3,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 1927,
+   "tipo": "punch",
+   "s": 1.45,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 1958,
+   "tipo": "corte",
+   "s": 1.1,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 2011,
+   "tipo": "punch",
+   "s": 1.4,
+   "dur": 4,
+   "fijo": true
+  },
+  {
+   "f": 2056,
+   "tipo": "corte",
+   "s": 1.22,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 2105,
+   "tipo": "corte",
+   "s": 1.1,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 2154,
+   "tipo": "corte",
+   "s": 1.2,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 2282,
+   "tipo": "corte",
+   "s": 1.08,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 2319,
+   "tipo": "punch",
+   "s": 1.34,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 2384,
+   "tipo": "corte",
+   "s": 1.16,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 2430,
+   "tipo": "corte",
+   "s": 1.28,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 2472,
+   "tipo": "corte",
+   "s": 1.08,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 2524,
+   "tipo": "punch",
+   "s": 1.4,
+   "dur": 4,
+   "fijo": true
+  },
+  {
+   "f": 2542,
+   "tipo": "corte",
+   "s": 1.265,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 2599,
+   "tipo": "corte",
+   "s": 1.34,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 2640,
+   "tipo": "punch",
+   "s": 1.415,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 2681,
+   "tipo": "punch",
+   "s": 1.435,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 2724,
+   "tipo": "corte",
+   "s": 1.35,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 2785,
+   "tipo": "corte",
+   "s": 1.42,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 2845,
+   "tipo": "salida",
+   "s": 1.26,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 2894,
+   "tipo": "corte",
+   "s": 1.33,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 2925,
+   "tipo": "punch",
+   "s": 1.42,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 2963,
+   "tipo": "corte",
+   "s": 1.405,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 3007,
+   "tipo": "punch",
+   "s": 1.45,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 3058,
+   "tipo": "salida",
+   "s": 1.27,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 3119,
+   "tipo": "punch",
+   "s": 1.36,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 3177,
+   "tipo": "punch",
+   "s": 1.435,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 3222,
+   "tipo": "salida",
+   "s": 1.27,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 3282,
+   "tipo": "punch",
+   "s": 1.42,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 3306,
+   "tipo": "corte",
+   "s": 1.04,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 3362,
+   "tipo": "punch",
+   "s": 1.18,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 3411,
+   "tipo": "punch",
+   "s": 1.33,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 3459,
+   "tipo": "corte",
+   "s": 1.3,
+   "dur": 4,
+   "fijo": true
+  },
+  {
+   "f": 3514,
+   "tipo": "corte",
+   "s": 1.04,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 3544,
+   "tipo": "punch",
+   "s": 1.26,
+   "dur": 5,
+   "fijo": true
+  },
+  {
+   "f": 3601,
+   "tipo": "corte",
+   "s": 1.1,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 3622,
+   "tipo": "corte",
+   "s": 1.25,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 3637,
+   "tipo": "corte",
+   "s": 1.08,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 3670,
+   "tipo": "punch",
+   "s": 1.23,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 3728,
+   "tipo": "punch",
+   "s": 1.38,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 3753,
+   "tipo": "punch",
+   "s": 1.42,
+   "dur": 4,
+   "fijo": true
+  },
+  {
+   "f": 3764,
+   "tipo": "corte",
+   "s": 1.1,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 3812,
+   "tipo": "corte",
+   "s": 1.3,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 3848,
+   "tipo": "corte",
+   "s": 1.06,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 3902,
+   "tipo": "corte",
+   "s": 1.3,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 3938,
+   "tipo": "punch",
+   "s": 1.4,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 3956,
+   "tipo": "corte",
+   "s": 1.265,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 3993,
+   "tipo": "punch",
+   "s": 1.365,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 4036,
+   "tipo": "corte",
+   "s": 1.265,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 4046,
+   "tipo": "corte",
+   "s": 1.31,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 4068,
+   "tipo": "corte",
+   "s": 1.355,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 4095,
+   "tipo": "corte",
+   "s": 1.4,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 4107,
+   "tipo": "corte",
+   "s": 1.445,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 4118,
+   "tipo": "corte",
+   "s": 1.29,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 4177,
+   "tipo": "punch",
+   "s": 1.415,
+   "dur": 5,
+   "fijo": true
+  },
+  {
+   "f": 4221,
+   "tipo": "corte",
+   "s": 1.28,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 4267,
+   "tipo": "corte",
+   "s": 1.23,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 4316,
+   "tipo": "punch",
+   "s": 1.38,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 4353,
+   "tipo": "corte",
+   "s": 1.12,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 4393,
+   "tipo": "corte",
+   "s": 1.3,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 4425,
+   "tipo": "corte",
+   "s": 1.1,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 4484,
+   "tipo": "salida",
+   "s": 1.0,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 4512,
+   "tipo": "corte",
+   "s": 1.15,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 4519,
+   "tipo": "punch",
+   "s": 1.3,
+   "dur": 4,
+   "fijo": true
+  },
+  {
+   "f": 4540,
+   "tipo": "punch",
+   "s": 1.45,
+   "dur": 4,
+   "fijo": true
+  },
+  {
+   "f": 4555,
+   "tipo": "corte",
+   "s": 1.44,
+   "dur": 4,
+   "fijo": true
+  },
+  {
+   "f": 4621,
+   "tipo": "corte",
+   "s": 1.18,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 4657,
+   "tipo": "punch",
+   "s": 1.32,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 4695,
+   "tipo": "corte",
+   "s": 1.04,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 4726,
+   "tipo": "punch",
+   "s": 1.18,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 4787,
+   "tipo": "punch",
+   "s": 1.33,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 4835,
+   "tipo": "salida",
+   "s": 1.06,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 4895,
+   "tipo": "corte",
+   "s": 1.21,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 4930,
+   "tipo": "corte",
+   "s": 1.08,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 4976,
+   "tipo": "corte",
+   "s": 1.23,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 5012,
+   "tipo": "salida",
+   "s": 1.05,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 5052,
+   "tipo": "punch",
+   "s": 1.2,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 5096,
+   "tipo": "corte",
+   "s": 1.29,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 5123,
+   "tipo": "punch",
+   "s": 1.44,
+   "dur": 5,
+   "fijo": true
+  },
+  {
+   "f": 5175,
+   "tipo": "corte",
+   "s": 1.34,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 5195,
+   "tipo": "corte",
+   "s": 1.265,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 5213,
+   "tipo": "corte",
+   "s": 1.2,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 5256,
+   "tipo": "punch",
+   "s": 1.35,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 5289,
+   "tipo": "corte",
+   "s": 1.15,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 5336,
+   "tipo": "corte",
+   "s": 1.3,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 5383,
+   "tipo": "punch",
+   "s": 1.45,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 5416,
+   "tipo": "corte",
+   "s": 1.12,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 5467,
+   "tipo": "punch",
+   "s": 1.36,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 5499,
+   "tipo": "salida",
+   "s": 1.0,
+   "dur": 16,
+   "fijo": false
+  },
+  {
+   "f": 5525,
+   "tipo": "corte",
+   "s": 1.15,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 5550,
+   "tipo": "suave",
+   "s": 1.14,
+   "dur": 20,
+   "fijo": true
+  },
+  {
+   "f": 5586,
+   "tipo": "punch",
+   "s": 1.28,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 5636,
+   "tipo": "salida",
+   "s": 1.08,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 5683,
+   "tipo": "punch",
+   "s": 1.23,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 5716,
+   "tipo": "punch",
+   "s": 1.38,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 5748,
+   "tipo": "corte",
+   "s": 1.1,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 5789,
+   "tipo": "punch",
+   "s": 1.25,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 5836,
+   "tipo": "punch",
+   "s": 1.4,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 5880,
+   "tipo": "corte",
+   "s": 1.22,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 5917,
+   "tipo": "punch",
+   "s": 1.36,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 5966,
+   "tipo": "salida",
+   "s": 1.06,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 6019,
+   "tipo": "punch",
+   "s": 1.24,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 6057,
+   "tipo": "corte",
+   "s": 1.295,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 6077,
+   "tipo": "punch",
+   "s": 1.42,
+   "dur": 5,
+   "fijo": true
+  },
+  {
+   "f": 6114,
+   "tipo": "corte",
+   "s": 1.31,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 6177,
+   "tipo": "corte",
+   "s": 1.23,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 6225,
+   "tipo": "punch",
+   "s": 1.38,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 6288,
+   "tipo": "punch",
+   "s": 1.39,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 6351,
+   "tipo": "corte",
+   "s": 1.0,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 6397,
+   "tipo": "punch",
+   "s": 1.24,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 6436,
+   "tipo": "punch",
+   "s": 1.39,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 6478,
+   "tipo": "salida",
+   "s": 1.22,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 6519,
+   "tipo": "corte",
+   "s": 1.1,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 6580,
+   "tipo": "salida",
+   "s": 1.0,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 6632,
+   "tipo": "corte",
+   "s": 1.12,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 6675,
+   "tipo": "corte",
+   "s": 1.27,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 6723,
+   "tipo": "corte",
+   "s": 1.16,
+   "dur": 0,
+   "fijo": false
+  },
+  {
+   "f": 6765,
+   "tipo": "punch",
+   "s": 1.32,
+   "dur": 5,
+   "fijo": false
+  },
+  {
+   "f": 6813,
+   "tipo": "salida",
+   "s": 1.05,
+   "dur": 7,
+   "fijo": false
+  },
+  {
+   "f": 6853,
+   "tipo": "corte",
+   "s": 1.34,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 6879,
+   "tipo": "punch",
+   "s": 1.44,
+   "dur": 5,
+   "fijo": true
+  },
+  {
+   "f": 6917,
+   "tipo": "corte",
+   "s": 1.1,
+   "dur": 0,
+   "fijo": true
+  },
+  {
+   "f": 6971,
+   "tipo": "punch",
+   "s": 1.4,
+   "dur": 5,
+   "fijo": false
+  }
+ ],
+ "zonas": [
+  {
+   "from": 226,
+   "to": 296,
+   "ax": 0.69,
+   "smin": 1.24,
+   "seco_from": true,
+   "seco_to": true
+  },
+  {
+   "from": 2542,
+   "to": 3306,
+   "ax": 0.69,
+   "smin": 1.24,
+   "seco_from": true,
+   "seco_to": true
+  },
+  {
+   "from": 3956,
+   "to": 4267,
+   "ax": 0.69,
+   "smin": 1.24,
+   "seco_from": true,
+   "seco_to": true
+  },
+  {
+   "from": 5096,
+   "to": 5213,
+   "ax": 0.69,
+   "smin": 1.24,
+   "seco_from": true,
+   "seco_to": true
+  },
+  {
+   "from": 6057,
+   "to": 6177,
+   "ax": 0.72,
+   "smin": 1.27,
+   "seco_from": true,
+   "seco_to": true
+  },
+  {
+   "from": 6853,
+   "to": 6917,
+   "ax": 0.69,
+   "smin": 1.24,
+   "seco_from": true,
+   "seco_to": true
+  }
+ ],
+ "transiciones": [
+  {
+   "f": 112,
+   "tipo": "whip",
+   "dur": 5
+  },
+  {
+   "f": 347,
+   "tipo": "whip",
+   "dur": 5
+  },
+  {
+   "f": 1698,
+   "tipo": "zoom",
+   "dur": 6
+  },
+  {
+   "f": 2472,
+   "tipo": "whip",
+   "dur": 5
+  },
+  {
+   "f": 3306,
+   "tipo": "zoom",
+   "dur": 6
+  },
+  {
+   "f": 4425,
+   "tipo": "whip",
+   "dur": 5
+  },
+  {
+   "f": 5096,
+   "tipo": "flash",
+   "dur": 6
+  },
+  {
+   "f": 5525,
+   "tipo": "whip",
+   "dur": 5
+  }
+ ],
+ "fondos": [
+  {
+   "from": 407,
+   "to": 628,
+   "blur": 16,
+   "dim": 0.42
+  },
+  {
+   "from": 2154,
+   "to": 2282,
+   "blur": 18,
+   "dim": 0.36
+  }
+ ],
+ "sacudidas": [
+  {
+   "f": 211,
+   "fuerza": 9,
+   "dur": 9
+  },
+  {
+   "f": 702,
+   "fuerza": 6,
+   "dur": 9
+  },
+  {
+   "f": 1265,
+   "fuerza": 8,
+   "dur": 9
+  },
+  {
+   "f": 2011,
+   "fuerza": 7,
+   "dur": 9
+  },
+  {
+   "f": 2524,
+   "fuerza": 8,
+   "dur": 9
+  },
+  {
+   "f": 3459,
+   "fuerza": 7,
+   "dur": 9
+  },
+  {
+   "f": 3753,
+   "fuerza": 7,
+   "dur": 9
+  },
+  {
+   "f": 4555,
+   "fuerza": 8,
+   "dur": 9
+  },
+  {
+   "f": 6971,
+   "fuerza": 6,
+   "dur": 9
+  }
+ ],
+ "graficos": [
+  {
+   "id": "G01",
+   "tipo": "Subtitulo",
+   "from": 1,
+   "dur": 70,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "todo",
+       "realce": true
+      },
+      {
+       "f": 5,
+       "texto": "lo",
+       "realce": false
+      },
+      {
+       "f": 8,
+       "texto": "que",
+       "realce": false
+      },
+      {
+       "f": 12,
+       "texto": "estás",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 22,
+       "texto": "viendo",
+       "realce": false
+      },
+      {
+       "f": 33,
+       "texto": "en",
+       "realce": false
+      },
+      {
+       "f": 47,
+       "texto": "pantalla",
+       "realce": false
+      }
+     ]
+    ]
+   },
+   "archivo": "G01_00m00s01f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G02",
+   "tipo": "Chips",
+   "from": 71,
+   "dur": 111,
+   "zona": "izquierda",
+   "capa": 2,
+   "props": {
+    "disposicion": "columna",
+    "items": [
+     {
+      "f": 2,
+      "texto": "CORTES",
+      "icono": "tijera"
+     },
+     {
+      "f": 19,
+      "texto": "SONIDOS",
+      "icono": "onda"
+     },
+     {
+      "f": 41,
+      "texto": "TRANSICIONES",
+      "icono": "transicion"
+     },
+     {
+      "f": 71,
+      "texto": "MOTION GRAPHICS",
+      "icono": "formas"
+     }
+    ],
+    "pulsos": [],
+    "x": 96,
+    "y": 300
+   },
+   "archivo": "G02_00m02s11f_chips.mov",
+   "pista": 1
+  },
+  {
+   "id": "G03",
+   "tipo": "Titular",
+   "from": 167,
+   "dur": 78,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "palabras": [
+     {
+      "f": 2,
+      "texto": "LOS",
+      "acento": false
+     },
+     {
+      "f": 10,
+      "texto": "HA",
+      "acento": false
+     },
+     {
+      "f": 21,
+      "texto": "CREADO",
+      "acento": false
+     },
+     {
+      "f": 44,
+      "texto": "CLAUDE",
+      "acento": true
+     }
+    ],
+    "y": 800,
+    "tam": 150
+   },
+   "archivo": "G03_00m05s17f_titular.mov",
+   "pista": 2
+  },
+  {
+   "id": "G04",
+   "tipo": "Terminal",
+   "from": 238,
+   "dur": 63,
+   "zona": "izquierda",
+   "capa": 2,
+   "props": {
+    "comando": "instalar skill editor-video",
+    "escribe": [
+     3,
+     38
+    ],
+    "carga": [
+     38,
+     45
+    ],
+    "hecho": 45,
+    "textoHecho": "Skill instalada",
+    "nota": "1 sola vez"
+   },
+   "archivo": "G04_00m07s28f_terminal.mov",
+   "pista": 1
+  },
+  {
+   "id": "G05",
+   "tipo": "Subtitulo",
+   "from": 292,
+   "dur": 67,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 1,
+       "texto": "y",
+       "realce": false
+      },
+      {
+       "f": 5,
+       "texto": "me",
+       "realce": false
+      },
+      {
+       "f": 7,
+       "texto": "he",
+       "realce": false
+      },
+      {
+       "f": 13,
+       "texto": "olvidado",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 31,
+       "texto": "para",
+       "realce": true
+      },
+      {
+       "f": 44,
+       "texto": "siempre",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G05_00m09s22f_subtitulo.mov",
+   "pista": 2
+  },
+  {
+   "id": "G06",
+   "tipo": "Subtitulo",
+   "from": 359,
+   "dur": 58,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "ser",
+       "realce": false
+      },
+      {
+       "f": 17,
+       "texto": "totalmente",
+       "realce": true
+      },
+      {
+       "f": 35,
+       "texto": "sincero",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G06_00m11s29f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G07",
+   "tipo": "Miniaturas",
+   "from": 407,
+   "dur": 221,
+   "zona": "completa",
+   "capa": 2,
+   "props": {
+    "entran": 3,
+    "busca": [
+     63,
+     138
+    ],
+    "consulta": "cómo editar con claude y capcut",
+    "sello": 179,
+    "textoSello": "TRAMPA"
+   },
+   "archivo": "G07_00m13s17f_miniaturas.mov",
+   "pista": 2
+  },
+  {
+   "id": "G08",
+   "tipo": "Titular",
+   "from": 672,
+   "dur": 73,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "palabras": [
+     {
+      "f": 2,
+      "texto": "100%",
+      "acento": false
+     },
+     {
+      "f": 20,
+      "texto": "AUTÓNOMOS",
+      "acento": false
+     }
+    ],
+    "y": 810,
+    "tam": 150,
+    "tachar": 30
+   },
+   "archivo": "G08_00m22s13f_titular.mov",
+   "pista": 1
+  },
+  {
+   "id": "G09",
+   "tipo": "AntesDespues",
+   "from": 760,
+   "dur": 154,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "etiqueta": "LA IA NO ESTÁ PARA",
+    "etiqueta2": "LA IA ESTÁ PARA",
+    "antes": "SUSTITUIRTE",
+    "despues": "APALANCARTE",
+    "fAntes": 57,
+    "fTachar": 76,
+    "fDespues": 113
+   },
+   "archivo": "G09_00m25s11f_antes-despues.mov",
+   "pista": 1
+  },
+  {
+   "id": "G10",
+   "tipo": "Chips",
+   "from": 926,
+   "dur": 187,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "disposicion": "fila",
+    "items": [
+     {
+      "f": 1,
+      "texto": "TIEMPO",
+      "icono": "reloj"
+     },
+     {
+      "f": 16,
+      "texto": "DINERO",
+      "icono": "dolar"
+     }
+    ],
+    "pulsos": [
+     {
+      "f": 157,
+      "i": 0
+     },
+     {
+      "f": 177,
+      "i": 1
+     }
+    ],
+    "y": 838
+   },
+   "archivo": "G10_00m30s27f_chips.mov",
+   "pista": 1
+  },
+  {
+   "id": "G11",
+   "tipo": "Subtitulo",
+   "from": 1127,
+   "dur": 73,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "aprendas",
+       "realce": false
+      },
+      {
+       "f": 16,
+       "texto": "una",
+       "realce": false
+      },
+      {
+       "f": 21,
+       "texto": "habilidad",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 41,
+       "texto": "muy",
+       "realce": true
+      },
+      {
+       "f": 50,
+       "texto": "valiosa",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G11_00m37s18f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G12",
+   "tipo": "Titular",
+   "from": 1201,
+   "dur": 97,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "palabras": [
+     {
+      "f": 1,
+      "texto": "EDITAR",
+      "acento": false
+     },
+     {
+      "f": 31,
+      "texto": "VÍDEOS",
+      "acento": false
+     },
+     {
+      "f": 48,
+      "texto": "CON",
+      "acento": false
+     },
+     {
+      "f": 64,
+      "texto": "CLAUDE",
+      "acento": true
+     }
+    ],
+    "y": 800,
+    "tam": 150
+   },
+   "archivo": "G12_00m40s02f_titular.mov",
+   "pista": 1
+  },
+  {
+   "id": "G13",
+   "tipo": "Subtitulo",
+   "from": 1347,
+   "dur": 43,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "con",
+       "realce": false
+      },
+      {
+       "f": 9,
+       "texto": "tu",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 18,
+       "texto": "criterio",
+       "realce": true
+      },
+      {
+       "f": 31,
+       "texto": "creativo",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G13_00m44s28f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G14",
+   "tipo": "Subtitulo",
+   "from": 1390,
+   "dur": 84,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "que",
+       "realce": false
+      },
+      {
+       "f": 10,
+       "texto": "eso",
+       "realce": false
+      },
+      {
+       "f": 19,
+       "texto": "Claude",
+       "realce": false
+      },
+      {
+       "f": 27,
+       "texto": "no",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 31,
+       "texto": "lo",
+       "realce": false
+      },
+      {
+       "f": 38,
+       "texto": "puede",
+       "realce": false
+      },
+      {
+       "f": 43,
+       "texto": "clonar",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G14_00m46s11f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G15",
+   "tipo": "BarraFinal",
+   "from": 1483,
+   "dur": 81,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "etiqueta": "SKILL",
+    "nota": "AL FINAL DEL VÍDEO",
+    "fViaje": [
+     32,
+     54
+    ],
+    "fNota": 49
+   },
+   "archivo": "G15_00m49s14f_barra-skill.mov",
+   "pista": 1
+  },
+  {
+   "id": "G16",
+   "tipo": "Flujo",
+   "from": 1574,
+   "dur": 83,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "nodos": [
+     {
+      "f": 30,
+      "texto": "TUS IDEAS",
+      "icono": "bombilla"
+     },
+     {
+      "f": 52,
+      "texto": "VÍDEOS",
+      "icono": "play",
+      "acento": true
+     }
+    ],
+    "fFlecha": 43
+   },
+   "archivo": "G16_00m52s16f_flujo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G17",
+   "tipo": "Subtitulo",
+   "from": 1657,
+   "dur": 57,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "en",
+       "realce": false
+      },
+      {
+       "f": 12,
+       "texto": "cuestión",
+       "realce": false
+      },
+      {
+       "f": 26,
+       "texto": "de",
+       "realce": false
+      },
+      {
+       "f": 26,
+       "texto": "minutos",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G17_00m55s09f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G18",
+   "tipo": "Chips",
+   "from": 1832,
+   "dur": 98,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "disposicion": "fila",
+    "items": [
+     {
+      "f": 2,
+      "texto": "VLOGS",
+      "icono": "camara"
+     },
+     {
+      "f": 20,
+      "texto": "VÍDEOS",
+      "icono": "play"
+     },
+     {
+      "f": 35,
+      "texto": "VSL",
+      "icono": "embudo"
+     }
+    ],
+    "pulsos": [],
+    "y": 838
+   },
+   "archivo": "G18_01m01s04f_chips.mov",
+   "pista": 1
+  },
+  {
+   "id": "G19",
+   "tipo": "Titular",
+   "from": 1976,
+   "dur": 66,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "palabras": [
+     {
+      "f": 2,
+      "texto": "LO",
+      "acento": false
+     },
+     {
+      "f": 11,
+      "texto": "BUENO",
+      "acento": false
+     },
+     {
+      "f": 28,
+      "texto": "SE",
+      "acento": false
+     },
+     {
+      "f": 35,
+      "texto": "PAGA",
+      "acento": true
+     }
+    ],
+    "y": 800,
+    "tam": 160
+   },
+   "archivo": "G19_01m05s28f_titular.mov",
+   "pista": 1
+  },
+  {
+   "id": "G20",
+   "tipo": "Subtitulo",
+   "from": 2047,
+   "dur": 67,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "esta",
+       "realce": false
+      },
+      {
+       "f": 9,
+       "texto": "edición",
+       "realce": true
+      },
+      {
+       "f": 30,
+       "texto": "la",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 34,
+       "texto": "he",
+       "realce": false
+      },
+      {
+       "f": 44,
+       "texto": "pensado",
+       "realce": false
+      }
+     ]
+    ]
+   },
+   "archivo": "G20_01m08s09f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G21",
+   "tipo": "Cifra",
+   "from": 2154,
+   "dur": 128,
+   "zona": "completa",
+   "capa": 2,
+   "props": {
+    "prefijo": "$",
+    "pasos": [
+     {
+      "f": 10,
+      "v": "100"
+     },
+     {
+      "f": 20,
+      "v": "200"
+     },
+     {
+      "f": 34,
+      "v": "300"
+     },
+     {
+      "f": 65,
+      "v": "500"
+     }
+    ],
+    "etiqueta": {
+     "f": 102,
+     "texto": "EN EDITORES"
+    },
+    "tachar": 119
+   },
+   "archivo": "G21_01m11s26f_cifra.mov",
+   "pista": 1
+  },
+  {
+   "id": "G22",
+   "tipo": "Subtitulo",
+   "from": 2280,
+   "dur": 71,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "sino",
+       "realce": false
+      },
+      {
+       "f": 6,
+       "texto": "que",
+       "realce": false
+      },
+      {
+       "f": 11,
+       "texto": "sepas",
+       "realce": false
+      },
+      {
+       "f": 27,
+       "texto": "tú",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 35,
+       "texto": "con",
+       "realce": false
+      },
+      {
+       "f": 39,
+       "texto": "tu",
+       "realce": true
+      },
+      {
+       "f": 44,
+       "texto": "ordenador",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G22_01m16s02f_subtitulo.mov",
+   "pista": 2
+  },
+  {
+   "id": "G23",
+   "tipo": "Subtitulo",
+   "from": 2410,
+   "dur": 73,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "ofrecerlo",
+       "realce": false
+      },
+      {
+       "f": 20,
+       "texto": "también",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 34,
+       "texto": "como",
+       "realce": false
+      },
+      {
+       "f": 51,
+       "texto": "servicio",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G23_01m20s12f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G24",
+   "tipo": "Titular",
+   "from": 2523,
+   "dur": 34,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "palabras": [
+     {
+      "f": 1,
+      "texto": "3",
+      "acento": true
+     },
+     {
+      "f": 8,
+      "texto": "RAZONES",
+      "acento": false
+     }
+    ],
+    "y": 800,
+    "tam": 190
+   },
+   "archivo": "G24_01m24s06f_titular.mov",
+   "pista": 1
+  },
+  {
+   "id": "G25",
+   "tipo": "Lista",
+   "from": 2555,
+   "dur": 747,
+   "zona": "izquierda",
+   "capa": 2,
+   "props": {
+    "antetitulo": "ESTÁS AQUÍ POR",
+    "titulo": "3 RAZONES",
+    "variante": "numeros",
+    "filas": [
+     {
+      "f": 7,
+      "texto": "Creas contenido"
+     },
+     {
+      "f": 247,
+      "texto": "Tu negocio necesita las redes"
+     },
+     {
+      "f": 564,
+      "texto": "Trabajas con un creador o editor"
+     }
+    ]
+   },
+   "archivo": "G25_01m25s08f_lista.mov",
+   "pista": 2
+  },
+  {
+   "id": "G26",
+   "tipo": "Subtitulo",
+   "from": 2663,
+   "dur": 40,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "ser",
+       "realce": false
+      },
+      {
+       "f": 8,
+       "texto": "mucho",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 13,
+       "texto": "más",
+       "realce": false
+      },
+      {
+       "f": 18,
+       "texto": "eficiente",
+       "realce": true
+      }
+     ]
+    ],
+    "y": 845
+   },
+   "archivo": "G26_01m28s26f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G27",
+   "tipo": "Subtitulo",
+   "from": 2980,
+   "dur": 40,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 1,
+       "texto": "de",
+       "realce": false
+      },
+      {
+       "f": 12,
+       "texto": "manera",
+       "realce": false
+      },
+      {
+       "f": 27,
+       "texto": "escalable",
+       "realce": true
+      }
+     ]
+    ],
+    "y": 845
+   },
+   "archivo": "G27_01m39s13f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G28",
+   "tipo": "Subtitulo",
+   "from": 3020,
+   "dur": 81,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "y",
+       "realce": false
+      },
+      {
+       "f": 10,
+       "texto": "sin",
+       "realce": false
+      },
+      {
+       "f": 21,
+       "texto": "vaciarte",
+       "realce": true
+      }
+     ],
+     [
+      {
+       "f": 32,
+       "texto": "el",
+       "realce": true
+      },
+      {
+       "f": 38,
+       "texto": "bolsillo",
+       "realce": true
+      }
+     ]
+    ],
+    "y": 845
+   },
+   "archivo": "G28_01m40s23f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G29",
+   "tipo": "Subtitulo",
+   "from": 3306,
+   "dur": 49,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "seas",
+       "realce": false
+      },
+      {
+       "f": 8,
+       "texto": "el",
+       "realce": false
+      },
+      {
+       "f": 13,
+       "texto": "perfil",
+       "realce": true
+      }
+     ],
+     [
+      {
+       "f": 20,
+       "texto": "que",
+       "realce": false
+      },
+      {
+       "f": 27,
+       "texto": "seas",
+       "realce": false
+      }
+     ]
+    ]
+   },
+   "archivo": "G29_01m50s09f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G30",
+   "tipo": "Titular",
+   "from": 3429,
+   "dur": 85,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "palabras": [
+     {
+      "f": 1,
+      "texto": "ESTE",
+      "acento": false
+     },
+     {
+      "f": 13,
+      "texto": "ES",
+      "acento": false
+     },
+     {
+      "f": 22,
+      "texto": "EL",
+      "acento": false
+     },
+     {
+      "f": 30,
+      "texto": "MEJOR",
+      "acento": true
+     },
+     {
+      "f": 42,
+      "texto": "VÍDEO",
+      "acento": false
+     }
+    ],
+    "y": 800,
+    "tam": 150
+   },
+   "archivo": "G30_01m54s12f_titular.mov",
+   "pista": 1
+  },
+  {
+   "id": "G31",
+   "tipo": "Cifra",
+   "from": 3542,
+   "dur": 115,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "pasos": [
+     {
+      "f": 2,
+      "v": "2026"
+     }
+    ],
+    "rueda": [
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "compacta": true,
+    "chips": [
+     {
+      "f": 59,
+      "texto": "SEP"
+     },
+     {
+      "f": 71,
+      "texto": "OCT"
+     },
+     {
+      "f": 80,
+      "texto": "NOV"
+     },
+     {
+      "f": 95,
+      "texto": "DIC"
+     }
+    ]
+   },
+   "archivo": "G31_01m58s06f_cifra.mov",
+   "pista": 1
+  },
+  {
+   "id": "G32",
+   "tipo": "Titular",
+   "from": 3727,
+   "dur": 58,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "palabras": [
+     {
+      "f": 1,
+      "texto": "CLAUDE",
+      "acento": true
+     },
+     {
+      "f": 19,
+      "texto": "+",
+      "acento": false
+     },
+     {
+      "f": 26,
+      "texto": "CAPCUT",
+      "acento": false
+     }
+    ],
+    "y": 800,
+    "tam": 170
+   },
+   "archivo": "G32_02m04s11f_titular.mov",
+   "pista": 1
+  },
+  {
+   "id": "G33",
+   "tipo": "Subtitulo",
+   "from": 3849,
+   "dur": 60,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 1,
+       "texto": "si",
+       "realce": false
+      },
+      {
+       "f": 7,
+       "texto": "quieres",
+       "realce": false
+      },
+      {
+       "f": 13,
+       "texto": "al",
+       "realce": false
+      },
+      {
+       "f": 19,
+       "texto": "menos",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 30,
+       "texto": "un",
+       "realce": false
+      },
+      {
+       "f": 40,
+       "texto": "acabado",
+       "realce": false
+      }
+     ]
+    ]
+   },
+   "archivo": "G33_02m08s13f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G34",
+   "tipo": "Titular",
+   "from": 3909,
+   "dur": 54,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "palabras": [
+     {
+      "f": 1,
+      "texto": "100%",
+      "acento": true
+     },
+     {
+      "f": 29,
+      "texto": "PROFESIONAL",
+      "acento": false
+     }
+    ],
+    "y": 800,
+    "tam": 150
+   },
+   "archivo": "G34_02m10s13f_titular.mov",
+   "pista": 1
+  },
+  {
+   "id": "G35",
+   "tipo": "Lista",
+   "from": 3960,
+   "dur": 304,
+   "zona": "izquierda",
+   "capa": 2,
+   "props": {
+    "antetitulo": "TE AHORRA EL TIEMPO DE",
+    "titulo": "CLAUDE",
+    "variante": "checks",
+    "filas": [
+     {
+      "f": 76,
+      "texto": "Cortes"
+     },
+     {
+      "f": 86,
+      "texto": "Transiciones"
+     },
+     {
+      "f": 108,
+      "texto": "Sonidos"
+     },
+     {
+      "f": 135,
+      "texto": "Música"
+     },
+     {
+      "f": 147,
+      "texto": "Textos"
+     },
+     {
+      "f": 217,
+      "texto": "TÚ: el toque final",
+      "destacada": true
+     }
+    ]
+   },
+   "archivo": "G35_02m12s04f_lista.mov",
+   "pista": 2
+  },
+  {
+   "id": "G36",
+   "tipo": "Subtitulo",
+   "from": 4294,
+   "dur": 64,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "ahorrarte",
+       "realce": false
+      },
+      {
+       "f": 22,
+       "texto": "todo",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 33,
+       "texto": "el",
+       "realce": false
+      },
+      {
+       "f": 42,
+       "texto": "tiempo",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G36_02m23s08f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G37",
+   "tipo": "Subtitulo",
+   "from": 4394,
+   "dur": 42,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 1,
+       "texto": "en",
+       "realce": false
+      },
+      {
+       "f": 10,
+       "texto": "cuestión",
+       "realce": false
+      },
+      {
+       "f": 15,
+       "texto": "de",
+       "realce": false
+      },
+      {
+       "f": 20,
+       "texto": "horas",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G37_02m26s18f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G38",
+   "tipo": "Titular",
+   "from": 4518,
+   "dur": 74,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "palabras": [
+     {
+      "f": 1,
+      "texto": "HORAS",
+      "acento": false
+     },
+     {
+      "f": 22,
+      "texto": "HORAS",
+      "acento": false
+     },
+     {
+      "f": 37,
+      "texto": "HORAS",
+      "acento": true
+     }
+    ],
+    "y": 800,
+    "tam": 150
+   },
+   "archivo": "G38_02m30s22f_titular.mov",
+   "pista": 1
+  },
+  {
+   "id": "G39",
+   "tipo": "Chips",
+   "from": 4592,
+   "dur": 27,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "disposicion": "fila",
+    "items": [
+     {
+      "f": 1,
+      "texto": "TUTORIALES",
+      "icono": "play"
+     }
+    ],
+    "pulsos": [],
+    "y": 838
+   },
+   "archivo": "G39_02m33s07f_chips.mov",
+   "pista": 1
+  },
+  {
+   "id": "G40",
+   "tipo": "Subtitulo",
+   "from": 4619,
+   "dur": 69,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "viendo",
+       "realce": false
+      },
+      {
+       "f": 8,
+       "texto": "cómo",
+       "realce": false
+      },
+      {
+       "f": 19,
+       "texto": "funcionaba",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 32,
+       "texto": "todo",
+       "realce": false
+      },
+      {
+       "f": 38,
+       "texto": "por",
+       "realce": true
+      },
+      {
+       "f": 47,
+       "texto": "dentro",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G40_02m34s04f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G41",
+   "tipo": "Chips",
+   "from": 4785,
+   "dur": 48,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "disposicion": "fila",
+    "items": [
+     {
+      "f": 2,
+      "texto": "SENCILLA",
+      "icono": "check"
+     },
+     {
+      "f": 29,
+      "texto": "EXPLICADA",
+      "icono": "check"
+     }
+    ],
+    "pulsos": [],
+    "y": 838
+   },
+   "archivo": "G41_02m39s20f_chips.mov",
+   "pista": 1
+  },
+  {
+   "id": "G42",
+   "tipo": "Subtitulo",
+   "from": 4833,
+   "dur": 73,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "no",
+       "realce": false
+      },
+      {
+       "f": 7,
+       "texto": "tengas",
+       "realce": false
+      },
+      {
+       "f": 13,
+       "texto": "que",
+       "realce": false
+      },
+      {
+       "f": 18,
+       "texto": "estar",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 27,
+       "texto": "rompiéndote",
+       "realce": false
+      },
+      {
+       "f": 43,
+       "texto": "la",
+       "realce": false
+      },
+      {
+       "f": 51,
+       "texto": "cabeza",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G42_02m41s08f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G43",
+   "tipo": "Flujo",
+   "from": 4921,
+   "dur": 58,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "nodos": [
+     {
+      "f": 9,
+      "texto": "1",
+      "icono": null
+     },
+     {
+      "f": 14,
+      "texto": "2",
+      "icono": null
+     },
+     {
+      "f": 20,
+      "texto": "3",
+      "icono": null,
+      "acento": true
+     }
+    ],
+    "fFlecha": 12,
+    "titulo": "PASO A PASO",
+    "pasos": true
+   },
+   "archivo": "G43_02m44s06f_flujo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G44",
+   "tipo": "Subtitulo",
+   "from": 5010,
+   "dur": 95,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "crear",
+       "realce": false
+      },
+      {
+       "f": 11,
+       "texto": "vídeos",
+       "realce": false
+      },
+      {
+       "f": 20,
+       "texto": "como",
+       "realce": false
+      },
+      {
+       "f": 30,
+       "texto": "este",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 42,
+       "texto": "en",
+       "realce": false
+      },
+      {
+       "f": 51,
+       "texto": "cuestión",
+       "realce": false
+      },
+      {
+       "f": 65,
+       "texto": "de",
+       "realce": false
+      },
+      {
+       "f": 72,
+       "texto": "horas",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G44_02m47s05f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G45",
+   "tipo": "Cifra",
+   "from": 5120,
+   "dur": 93,
+   "zona": "izquierda",
+   "capa": 2,
+   "props": {
+    "cuenta": {
+     "f": 3,
+     "de": 1,
+     "a": 12,
+     "dur": 13
+    },
+    "sufijo": "DÍAS",
+    "antetitulo": "PEGADO A LA PANTALLA",
+    "lateral": true,
+    "chips": [
+     {
+      "f": 55,
+      "texto": "DÍA",
+      "icono": "sol"
+     },
+     {
+      "f": 75,
+      "texto": "NOCHE",
+      "icono": "luna"
+     }
+    ]
+   },
+   "archivo": "G45_02m50s25f_cifra.mov",
+   "pista": 1
+  },
+  {
+   "id": "G46",
+   "tipo": "Subtitulo",
+   "from": 5414,
+   "dur": 29,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "todo",
+       "realce": false
+      },
+      {
+       "f": 8,
+       "texto": "ese",
+       "realce": false
+      },
+      {
+       "f": 18,
+       "texto": "trabajo",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G46_03m00s19f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G47",
+   "tipo": "Subtitulo",
+   "from": 5443,
+   "dur": 54,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 1,
+       "texto": "ya",
+       "realce": false
+      },
+      {
+       "f": 4,
+       "texto": "me",
+       "realce": false
+      },
+      {
+       "f": 5,
+       "texto": "he",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 8,
+       "texto": "encargado",
+       "realce": true
+      },
+      {
+       "f": 24,
+       "texto": "yo",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G47_03m01s18f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G48",
+   "tipo": "Subtitulo",
+   "from": 5497,
+   "dur": 36,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "así",
+       "realce": false
+      },
+      {
+       "f": 5,
+       "texto": "que",
+       "realce": false
+      },
+      {
+       "f": 14,
+       "texto": "tranquilo",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G48_03m03s12f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G49",
+   "tipo": "Rotulo",
+   "from": 5584,
+   "dur": 164,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "nombre": "PABLO",
+    "sub": "Negocios online · casi 2 años",
+    "fSub": 79,
+    "icono": null
+   },
+   "archivo": "G49_03m06s10f_rotulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G50",
+   "tipo": "Chips",
+   "from": 5787,
+   "dur": 143,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "disposicion": "fila",
+    "items": [
+     {
+      "f": 2,
+      "texto": "VENTAS",
+      "icono": "dolar"
+     },
+     {
+      "f": 83,
+      "texto": "PARTE CREATIVA",
+      "icono": "bombilla"
+     },
+     {
+      "f": 120,
+      "texto": "MARKETING",
+      "icono": "megafono"
+     }
+    ],
+    "pulsos": [],
+    "y": 838
+   },
+   "archivo": "G50_03m13s03f_chips.mov",
+   "pista": 1
+  },
+  {
+   "id": "G51",
+   "tipo": "Ventana",
+   "from": 6062,
+   "dur": 113,
+   "zona": "izquierda",
+   "capa": 2,
+   "props": {
+    "imagen": "video-02oct/mario.jpg",
+    "titulo": "MARIO",
+    "sub": "mi socio · marca personal",
+    "fRotulo": 15
+   },
+   "archivo": "G51_03m22s08f_ventana.mov",
+   "pista": 1
+  },
+  {
+   "id": "G52",
+   "tipo": "Chips",
+   "from": 6312,
+   "dur": 207,
+   "zona": "izquierda",
+   "capa": 2,
+   "props": {
+    "disposicion": "columna",
+    "items": [
+     {
+      "f": 1,
+      "texto": "MÁS VÍDEOS COMO ESTE",
+      "icono": "play"
+     },
+     {
+      "f": 54,
+      "texto": "MI DÍA A DÍA EMPRENDIENDO",
+      "icono": "camara"
+     }
+    ],
+    "pulsos": [],
+    "x": 96,
+    "y": 330
+   },
+   "archivo": "G52_03m30s18f_chips.mov",
+   "pista": 1
+  },
+  {
+   "id": "G53",
+   "tipo": "Rotulo",
+   "from": 6540,
+   "dur": 92,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "nombre": "BALI",
+    "sub": "con mis socios, Miguel y Mario",
+    "fSub": 28,
+    "icono": "pin"
+   },
+   "archivo": "G53_03m38s07f_rotulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G54",
+   "tipo": "Suscribir",
+   "from": 6664,
+   "dur": 58,
+   "zona": "abajo",
+   "capa": 2,
+   "props": {
+    "fClic": 21
+   },
+   "archivo": "G54_03m42s11f_suscribir.mov",
+   "pista": 1
+  },
+  {
+   "id": "G55",
+   "tipo": "Subtitulo",
+   "from": 6722,
+   "dur": 95,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 1,
+       "texto": "no",
+       "realce": false
+      },
+      {
+       "f": 4,
+       "texto": "te",
+       "realce": false
+      },
+      {
+       "f": 9,
+       "texto": "cuesta",
+       "realce": false
+      }
+     ],
+     [
+      {
+       "f": 43,
+       "texto": "absolutamente",
+       "realce": true
+      },
+      {
+       "f": 73,
+       "texto": "nada",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G55_03m44s09f_subtitulo.mov",
+   "pista": 1
+  },
+  {
+   "id": "G56",
+   "tipo": "Grafica",
+   "from": 6854,
+   "dur": 63,
+   "zona": "izquierda",
+   "capa": 2,
+   "props": {
+    "fSube": 25,
+    "etiqueta": "ESTE CANAL"
+   },
+   "archivo": "G56_03m48s21f_grafica.mov",
+   "pista": 1
+  },
+  {
+   "id": "G57",
+   "tipo": "Subtitulo",
+   "from": 6934,
+   "dur": 65,
+   "zona": "abajo",
+   "capa": 3,
+   "props": {
+    "lineas": [
+     [
+      {
+       "f": 2,
+       "texto": "muchísima",
+       "realce": false
+      },
+      {
+       "f": 28,
+       "texto": "más",
+       "realce": true
+      },
+      {
+       "f": 37,
+       "texto": "gente",
+       "realce": true
+      }
+     ]
+    ]
+   },
+   "archivo": "G57_03m51s11f_subtitulo.mov",
+   "pista": 1
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.0,
+   "sonido": "swish",
+   "db": 2,
+   "archivo": "S001_00m00s00f_swish.wav"
+  },
+  {
+   "t": 2.398,
+   "sonido": "tijera",
+   "db": 1,
+   "archivo": "S002_00m02s12f_tijera.wav"
+  },
+  {
+   "t": 2.948,
+   "sonido": "notificacion",
+   "db": -2,
+   "archivo": "S003_00m02s28f_notificacion.wav"
+  },
+  {
+   "t": 3.628,
+   "sonido": "whoosh",
+   "db": 0.0,
+   "archivo": "S004_00m03s19f_whoosh.wav"
+  },
+  {
+   "t": 4.708,
+   "sonido": "pop_agudo",
+   "db": 1,
+   "archivo": "S005_00m04s21f_pop_agudo.wav"
+  },
+  {
+   "t": 6.008,
+   "sonido": "riser",
+   "db": -1,
+   "archivo": "S006_00m06s00f_riser.wav"
+  },
+  {
+   "t": 6.998,
+   "sonido": "impacto",
+   "db": 0.0,
+   "archivo": "S007_00m07s00f_impacto.wav"
+  },
+  {
+   "t": 7.93,
+   "sonido": "swish",
+   "db": -2,
+   "archivo": "S008_00m07s28f_swish.wav"
+  },
+  {
+   "t": 8.05,
+   "sonido": "teclas",
+   "db": -1,
+   "archivo": "S009_00m08s01f_teclas.wav"
+  },
+  {
+   "t": 9.43,
+   "sonido": "exito",
+   "db": 0.0,
+   "archivo": "S010_00m09s13f_exito.wav"
+  },
+  {
+   "t": 10.74,
+   "sonido": "swish",
+   "db": -1,
+   "archivo": "S011_00m10s22f_swish.wav"
+  },
+  {
+   "t": 11.458,
+   "sonido": "whoosh",
+   "db": 0.0,
+   "archivo": "S012_00m11s13f_whoosh.wav"
+  },
+  {
+   "t": 13.57,
+   "sonido": "whoosh_grave",
+   "db": -1,
+   "archivo": "S013_00m13s17f_whoosh_grave.wav"
+  },
+  {
+   "t": 13.72,
+   "sonido": "pop_agudo",
+   "db": -4,
+   "archivo": "S014_00m13s21f_pop_agudo.wav"
+  },
+  {
+   "t": 13.82,
+   "sonido": "pop",
+   "db": -4,
+   "archivo": "S015_00m13s24f_pop.wav"
+  },
+  {
+   "t": 13.92,
+   "sonido": "pop_agudo",
+   "db": -4,
+   "archivo": "S016_00m13s27f_pop_agudo.wav"
+  },
+  {
+   "t": 14.02,
+   "sonido": "pop",
+   "db": -4,
+   "archivo": "S017_00m14s00f_pop.wav"
+  },
+  {
+   "t": 14.12,
+   "sonido": "pop_agudo",
+   "db": -4,
+   "archivo": "S018_00m14s03f_pop_agudo.wav"
+  },
+  {
+   "t": 14.22,
+   "sonido": "pop",
+   "db": -4,
+   "archivo": "S019_00m14s06f_pop.wav"
+  },
+  {
+   "t": 15.69,
+   "sonido": "teclas",
+   "db": -3,
+   "archivo": "S020_00m15s20f_teclas.wav"
+  },
+  {
+   "t": 17.03,
+   "sonido": "teclas",
+   "db": -3,
+   "archivo": "S021_00m17s01f_teclas.wav"
+  },
+  {
+   "t": 18.863,
+   "sonido": "riser",
+   "db": -5,
+   "archivo": "S022_00m18s26f_riser.wav"
+  },
+  {
+   "t": 19.533,
+   "sonido": "impacto",
+   "db": -1,
+   "archivo": "S023_00m19s16f_impacto.wav"
+  },
+  {
+   "t": 19.583,
+   "sonido": "error",
+   "db": -1,
+   "archivo": "S024_00m19s18f_error.wav"
+  },
+  {
+   "t": 20.923,
+   "sonido": "swish",
+   "db": 0.0,
+   "archivo": "S025_00m20s28f_swish.wav"
+  },
+  {
+   "t": 22.436,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S026_00m22s13f_pop.wav"
+  },
+  {
+   "t": 23.415,
+   "sonido": "error",
+   "db": 1,
+   "archivo": "S027_00m23s13f_error.wav"
+  },
+  {
+   "t": 24.655,
+   "sonido": "golpe_suave",
+   "db": -2,
+   "archivo": "S028_00m24s20f_golpe_suave.wav"
+  },
+  {
+   "t": 25.335,
+   "sonido": "pop",
+   "db": -3,
+   "archivo": "S029_00m25s10f_pop.wav"
+  },
+  {
+   "t": 27.235,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S030_00m27s07f_pop.wav"
+  },
+  {
+   "t": 27.875,
+   "sonido": "error",
+   "db": 0.0,
+   "archivo": "S031_00m27s26f_error.wav"
+  },
+  {
+   "t": 29.065,
+   "sonido": "exito",
+   "db": 0.0,
+   "archivo": "S032_00m29s02f_exito.wav"
+  },
+  {
+   "t": 30.895,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S033_00m30s27f_pop.wav"
+  },
+  {
+   "t": 31.395,
+   "sonido": "caja",
+   "db": -3,
+   "archivo": "S034_00m31s12f_caja.wav"
+  },
+  {
+   "t": 36.118,
+   "sonido": "tic",
+   "db": 1,
+   "archivo": "S035_00m36s03f_tic.wav"
+  },
+  {
+   "t": 36.778,
+   "sonido": "tic",
+   "db": 1,
+   "archivo": "S036_00m36s23f_tic.wav"
+  },
+  {
+   "t": 39.238,
+   "sonido": "swish",
+   "db": 0.0,
+   "archivo": "S037_00m39s07f_swish.wav"
+  },
+  {
+   "t": 40.068,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S038_00m40s02f_pop.wav"
+  },
+  {
+   "t": 41.196,
+   "sonido": "riser",
+   "db": -3,
+   "archivo": "S039_00m41s06f_riser.wav"
+  },
+  {
+   "t": 42.166,
+   "sonido": "impacto",
+   "db": 0.0,
+   "archivo": "S040_00m42s05f_impacto.wav"
+  },
+  {
+   "t": 45.51,
+   "sonido": "pop",
+   "db": -2,
+   "archivo": "S041_00m45s15f_pop.wav"
+  },
+  {
+   "t": 47.76,
+   "sonido": "golpe_suave",
+   "db": 0.0,
+   "archivo": "S042_00m47s22f_golpe_suave.wav"
+  },
+  {
+   "t": 49.48,
+   "sonido": "swish",
+   "db": -1,
+   "archivo": "S043_00m49s14f_swish.wav"
+  },
+  {
+   "t": 49.82,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S044_00m49s24f_pop.wav"
+  },
+  {
+   "t": 51.24,
+   "sonido": "ding",
+   "db": -2,
+   "archivo": "S045_00m51s08f_ding.wav"
+  },
+  {
+   "t": 53.48,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S046_00m53s15f_pop.wav"
+  },
+  {
+   "t": 53.96,
+   "sonido": "swish",
+   "db": -2,
+   "archivo": "S047_00m53s29f_swish.wav"
+  },
+  {
+   "t": 54.22,
+   "sonido": "pop_agudo",
+   "db": 1,
+   "archivo": "S048_00m54s07f_pop_agudo.wav"
+  },
+  {
+   "t": 56.11,
+   "sonido": "ding",
+   "db": -3,
+   "archivo": "S049_00m56s04f_ding.wav"
+  },
+  {
+   "t": 56.457,
+   "sonido": "whoosh_grave",
+   "db": 0.0,
+   "archivo": "S050_00m56s14f_whoosh_grave.wav"
+  },
+  {
+   "t": 61.153,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S051_01m01s05f_pop.wav"
+  },
+  {
+   "t": 61.753,
+   "sonido": "pop_agudo",
+   "db": 0.0,
+   "archivo": "S052_01m01s23f_pop_agudo.wav"
+  },
+  {
+   "t": 62.253,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S053_01m02s08f_pop.wav"
+  },
+  {
+   "t": 65.946,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S054_01m05s28f_pop.wav"
+  },
+  {
+   "t": 67.056,
+   "sonido": "caja",
+   "db": 0.0,
+   "archivo": "S055_01m07s02f_caja.wav"
+  },
+  {
+   "t": 67.056,
+   "sonido": "golpe_suave",
+   "db": -1,
+   "archivo": "S056_01m07s02f_golpe_suave.wav"
+  },
+  {
+   "t": 71.772,
+   "sonido": "whoosh",
+   "db": -3,
+   "archivo": "S057_01m11s23f_whoosh.wav"
+  },
+  {
+   "t": 72.162,
+   "sonido": "tic",
+   "db": 3,
+   "archivo": "S058_01m12s05f_tic.wav"
+  },
+  {
+   "t": 72.522,
+   "sonido": "tic",
+   "db": 3,
+   "archivo": "S059_01m12s15f_tic.wav"
+  },
+  {
+   "t": 72.983,
+   "sonido": "tic",
+   "db": 3,
+   "archivo": "S060_01m12s29f_tic.wav"
+  },
+  {
+   "t": 74.002,
+   "sonido": "caja",
+   "db": 1,
+   "archivo": "S061_01m14s00f_caja.wav"
+  },
+  {
+   "t": 74.002,
+   "sonido": "golpe_suave",
+   "db": 0.0,
+   "archivo": "S062_01m14s00f_golpe_suave.wav"
+  },
+  {
+   "t": 75.812,
+   "sonido": "error",
+   "db": 1,
+   "archivo": "S063_01m15s24f_error.wav"
+  },
+  {
+   "t": 76.112,
+   "sonido": "swish",
+   "db": 0.0,
+   "archivo": "S064_01m16s03f_swish.wav"
+  },
+  {
+   "t": 82.062,
+   "sonido": "ding",
+   "db": -3,
+   "archivo": "S065_01m22s01f_ding.wav"
+  },
+  {
+   "t": 82.362,
+   "sonido": "whoosh",
+   "db": 0.0,
+   "archivo": "S066_01m22s10f_whoosh.wav"
+  },
+  {
+   "t": 83.421,
+   "sonido": "riser",
+   "db": -4,
+   "archivo": "S067_01m23s12f_riser.wav"
+  },
+  {
+   "t": 84.191,
+   "sonido": "impacto",
+   "db": -1,
+   "archivo": "S068_01m24s06f_impacto.wav"
+  },
+  {
+   "t": 85.218,
+   "sonido": "swish",
+   "db": -2,
+   "archivo": "S069_01m25s07f_swish.wav"
+  },
+  {
+   "t": 85.454,
+   "sonido": "bloop",
+   "db": 0.0,
+   "archivo": "S070_01m25s14f_bloop.wav"
+  },
+  {
+   "t": 89.414,
+   "sonido": "pop",
+   "db": -3,
+   "archivo": "S071_01m29s13f_pop.wav"
+  },
+  {
+   "t": 93.441,
+   "sonido": "bloop",
+   "db": 0.0,
+   "archivo": "S072_01m33s13f_bloop.wav"
+  },
+  {
+   "t": 100.281,
+   "sonido": "pop",
+   "db": -3,
+   "archivo": "S073_01m40s08f_pop.wav"
+  },
+  {
+   "t": 102.001,
+   "sonido": "golpe_suave",
+   "db": -2,
+   "archivo": "S074_01m42s00f_golpe_suave.wav"
+  },
+  {
+   "t": 104.021,
+   "sonido": "bloop",
+   "db": 0.0,
+   "archivo": "S075_01m44s01f_bloop.wav"
+  },
+  {
+   "t": 110.11,
+   "sonido": "whoosh_grave",
+   "db": 0.0,
+   "archivo": "S076_01m50s03f_whoosh_grave.wav"
+  },
+  {
+   "t": 114.422,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S077_01m54s12f_pop.wav"
+  },
+  {
+   "t": 115.392,
+   "sonido": "impacto",
+   "db": -2,
+   "archivo": "S078_01m55s11f_impacto.wav"
+  },
+  {
+   "t": 118.142,
+   "sonido": "teclas",
+   "db": -4,
+   "archivo": "S079_01m58s05f_teclas.wav"
+  },
+  {
+   "t": 118.382,
+   "sonido": "ding",
+   "db": -1,
+   "archivo": "S080_01m58s12f_ding.wav"
+  },
+  {
+   "t": 120.112,
+   "sonido": "tic",
+   "db": 2,
+   "archivo": "S081_02m00s04f_tic.wav"
+  },
+  {
+   "t": 120.532,
+   "sonido": "tic",
+   "db": 2,
+   "archivo": "S082_02m00s16f_tic.wav"
+  },
+  {
+   "t": 120.832,
+   "sonido": "tic",
+   "db": 2,
+   "archivo": "S083_02m00s25f_tic.wav"
+  },
+  {
+   "t": 121.332,
+   "sonido": "tic",
+   "db": 2,
+   "archivo": "S084_02m01s10f_tic.wav"
+  },
+  {
+   "t": 124.362,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S085_02m04s11f_pop.wav"
+  },
+  {
+   "t": 125.182,
+   "sonido": "impacto",
+   "db": -1,
+   "archivo": "S086_02m05s06f_impacto.wav"
+  },
+  {
+   "t": 130.438,
+   "sonido": "golpe_suave",
+   "db": 0.0,
+   "archivo": "S087_02m10s13f_golpe_suave.wav"
+  },
+  {
+   "t": 131.378,
+   "sonido": "ding",
+   "db": -3,
+   "archivo": "S088_02m11s11f_ding.wav"
+  },
+  {
+   "t": 132.108,
+   "sonido": "swish",
+   "db": -2,
+   "archivo": "S089_02m12s03f_swish.wav"
+  },
+  {
+   "t": 134.638,
+   "sonido": "tic",
+   "db": 3,
+   "archivo": "S090_02m14s19f_tic.wav"
+  },
+  {
+   "t": 134.958,
+   "sonido": "tic",
+   "db": 3,
+   "archivo": "S091_02m14s29f_tic.wav"
+  },
+  {
+   "t": 135.698,
+   "sonido": "tic",
+   "db": 3,
+   "archivo": "S092_02m15s21f_tic.wav"
+  },
+  {
+   "t": 136.618,
+   "sonido": "tic",
+   "db": 3,
+   "archivo": "S093_02m16s18f_tic.wav"
+  },
+  {
+   "t": 136.994,
+   "sonido": "tic",
+   "db": 3,
+   "archivo": "S094_02m17s00f_tic.wav"
+  },
+  {
+   "t": 139.325,
+   "sonido": "exito",
+   "db": -1,
+   "archivo": "S095_02m19s10f_exito.wav"
+  },
+  {
+   "t": 147.228,
+   "sonido": "ding",
+   "db": -3,
+   "archivo": "S096_02m27s06f_ding.wav"
+  },
+  {
+   "t": 147.528,
+   "sonido": "whoosh",
+   "db": 0.0,
+   "archivo": "S097_02m27s15f_whoosh.wav"
+  },
+  {
+   "t": 150.764,
+   "sonido": "golpe_suave",
+   "db": -2,
+   "archivo": "S098_02m30s22f_golpe_suave.wav"
+  },
+  {
+   "t": 151.444,
+   "sonido": "golpe_suave",
+   "db": -1,
+   "archivo": "S099_02m31s14f_golpe_suave.wav"
+  },
+  {
+   "t": 151.944,
+   "sonido": "impacto",
+   "db": -1,
+   "archivo": "S100_02m31s29f_impacto.wav"
+  },
+  {
+   "t": 153.214,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S101_02m33s07f_pop.wav"
+  },
+  {
+   "t": 159.674,
+   "sonido": "bloop",
+   "db": 0.0,
+   "archivo": "S102_02m39s20f_bloop.wav"
+  },
+  {
+   "t": 160.574,
+   "sonido": "bloop",
+   "db": 1,
+   "archivo": "S103_02m40s17f_bloop.wav"
+  },
+  {
+   "t": 164.47,
+   "sonido": "bloop",
+   "db": -1,
+   "archivo": "S104_02m44s14f_bloop.wav"
+  },
+  {
+   "t": 164.66,
+   "sonido": "bloop",
+   "db": 0.0,
+   "archivo": "S105_02m44s20f_bloop.wav"
+  },
+  {
+   "t": 164.86,
+   "sonido": "bloop",
+   "db": 1,
+   "archivo": "S106_02m44s26f_bloop.wav"
+  },
+  {
+   "t": 169.54,
+   "sonido": "ding",
+   "db": -3,
+   "archivo": "S107_02m49s16f_ding.wav"
+  },
+  {
+   "t": 169.986,
+   "sonido": "glitch",
+   "db": -2,
+   "archivo": "S108_02m49s29f_glitch.wav"
+  },
+  {
+   "t": 170.036,
+   "sonido": "golpe_suave",
+   "db": 0.0,
+   "archivo": "S109_02m50s01f_golpe_suave.wav"
+  },
+  {
+   "t": 170.877,
+   "sonido": "teclas",
+   "db": -2,
+   "archivo": "S110_02m50s26f_teclas.wav"
+  },
+  {
+   "t": 171.327,
+   "sonido": "ding",
+   "db": -1,
+   "archivo": "S111_02m51s10f_ding.wav"
+  },
+  {
+   "t": 172.657,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S112_02m52s20f_pop.wav"
+  },
+  {
+   "t": 173.317,
+   "sonido": "pop_agudo",
+   "db": 0.0,
+   "archivo": "S113_02m53s09f_pop_agudo.wav"
+  },
+  {
+   "t": 182.379,
+   "sonido": "golpe_suave",
+   "db": -1,
+   "archivo": "S114_03m02s11f_golpe_suave.wav"
+  },
+  {
+   "t": 183.84,
+   "sonido": "ding",
+   "db": -2,
+   "archivo": "S115_03m03s25f_ding.wav"
+  },
+  {
+   "t": 184.231,
+   "sonido": "whoosh",
+   "db": 0.0,
+   "archivo": "S116_03m04s07f_whoosh.wav"
+  },
+  {
+   "t": 186.319,
+   "sonido": "swish",
+   "db": -1,
+   "archivo": "S117_03m06s10f_swish.wav"
+  },
+  {
+   "t": 186.399,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S118_03m06s12f_pop.wav"
+  },
+  {
+   "t": 193.119,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S119_03m13s04f_pop.wav"
+  },
+  {
+   "t": 195.819,
+   "sonido": "pop_agudo",
+   "db": 0.0,
+   "archivo": "S120_03m15s25f_pop_agudo.wav"
+  },
+  {
+   "t": 197.059,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S121_03m17s02f_pop.wav"
+  },
+  {
+   "t": 202.249,
+   "sonido": "whoosh",
+   "db": -4,
+   "archivo": "S122_03m22s07f_whoosh.wav"
+  },
+  {
+   "t": 202.739,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S123_03m22s22f_pop.wav"
+  },
+  {
+   "t": 210.619,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S124_03m30s18f_pop.wav"
+  },
+  {
+   "t": 212.359,
+   "sonido": "pop_agudo",
+   "db": 0.0,
+   "archivo": "S125_03m32s10f_pop_agudo.wav"
+  },
+  {
+   "t": 218.359,
+   "sonido": "pop",
+   "db": 0.0,
+   "archivo": "S126_03m38s11f_pop.wav"
+  },
+  {
+   "t": 218.419,
+   "sonido": "golpe_suave",
+   "db": -3,
+   "archivo": "S127_03m38s13f_golpe_suave.wav"
+  },
+  {
+   "t": 222.339,
+   "sonido": "swish",
+   "db": -2,
+   "archivo": "S128_03m42s11f_swish.wav"
+  },
+  {
+   "t": 223.049,
+   "sonido": "clic",
+   "db": 3,
+   "archivo": "S129_03m43s02f_clic.wav"
+  },
+  {
+   "t": 223.169,
+   "sonido": "notificacion",
+   "db": 0.0,
+   "archivo": "S130_03m43s05f_notificacion.wav"
+  },
+  {
+   "t": 226.679,
+   "sonido": "golpe_suave",
+   "db": 0.0,
+   "archivo": "S131_03m46s21f_golpe_suave.wav"
+  },
+  {
+   "t": 228.679,
+   "sonido": "swish",
+   "db": -2,
+   "archivo": "S132_03m48s21f_swish.wav"
+  },
+  {
+   "t": 229.489,
+   "sonido": "riser",
+   "db": -6,
+   "archivo": "S133_03m49s15f_riser.wav"
+  },
+  {
+   "t": 230.039,
+   "sonido": "ding",
+   "db": -1,
+   "archivo": "S134_03m50s01f_ding.wav"
+  },
+  {
+   "t": 232.569,
+   "sonido": "impacto",
+   "db": -2,
+   "archivo": "S135_03m52s17f_impacto.wav"
+  }
+ ],
+ "uniones": [
+  226,
+  347,
+  547,
+  685,
+  956,
+  1276,
+  1343,
+  1698,
+  1958,
+  2154,
+  2472,
+  2542,
+  2724,
+  3306,
+  3764,
+  3848,
+  3902,
+  4118,
+  4267,
+  4393,
+  4425,
+  4512,
+  4895,
+  5096,
+  5336,
+  5525
+ ]
+}

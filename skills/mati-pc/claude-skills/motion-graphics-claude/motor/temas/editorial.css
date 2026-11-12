@@ -1,0 +1,9 @@
+/* Tema «Editorial» (estilo de la guía de motion graphics). Aplica con --tema editorial al renderizar, ?tema=editorial en la vista previa
+   o "tema": "editorial" en estilo.json. Tipografía: Fraunces + Figtree. Curva por defecto: entradaSalidaQuint. Trama: lineas. */
+:root { --tema:'editorial'; --fondo:#EFE9DF; --fondo-rgb:239,233,223; --rejilla:#E3DBCD; --halo:180,54,31; --acento:#B4361F; --acento2:#B4361F;
+  --texto:#1D1A16; --mute:#6E665B; --tarjeta:#F8F4EC; --tarjeta2:#F8F4EC; --superficie:#E3DBCD; --tinta:#F8F4EC;
+  --claro:0,0,0; --sombra:60,50,80; --borde-tarjeta:rgba(29,26,22,.14); --sombra-tarjeta:rgba(60,40,20,.10);
+  --radio:2px; --fuente:'Fraunces', 'Figtree', 'Inter', sans-serif; --fuente-titulo:'Fraunces', 'Inter', sans-serif; --fuente-texto:'Figtree', 'Inter', sans-serif;
+  --curva:entradaSalidaQuint; }
+.mg-fondo-marca { background: radial-gradient(60% 48% at 50% 112%, rgba(var(--halo), .26), rgba(var(--halo), .08) 45%, transparent 72%), linear-gradient(var(--rejilla) 1px, transparent 1px) 0 0/70px 70px, var(--fondo); }
+.mg-tarjeta { border-radius: var(--radio); box-shadow: 0 26px 60px var(--sombra-tarjeta), 0 0 0 1px var(--borde-tarjeta); }

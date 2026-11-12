@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- Ejemplo «reel-cta-final» · motion-graphics-claude · familia 5 (reels con persona hablando)
+     Cierre con CTA «Comenta X» al estilo de los comentarios de Instagram: entra la caja de comentario, se escribe la palabra
+     letra a letra, se pulsa enviar, sale el comentario publicado con un corazón que late y la frase del CTA.
+     Ocupa los últimos «duracion_cta» segundos de la toma (o empieza en la palabra «empieza» si se dice).
+     Parámetros: "palabra" (la que deben comentar), "frase" (*palabra* = acento), "usuario", "empieza", "duracion_cta"
+     Render simple: node scripts/render.mjs video reel-cta-final --calidad hd --transparente → python scripts/reel.py componer reel-cta-final
+     Capas para editar-reels-claude: python scripts/reel.py capas reel-cta-final -->
+<link rel="stylesheet" href="../motor/estilo.css">
+<script src="../motor/kit-escenas.js"></script>
+<script src="../motor/motor.js"></script>
+<script src="../motor/reel.js"></script>
+<style>
+  .cta { width:940px; color:var(--texto); font-family:var(--fuente); }
+  .frase { font:800 64px/1.05 var(--fuente-titulo, var(--fuente)); letter-spacing:-.03em; text-align:center; margin-bottom:26px; text-shadow:0 6px 30px rgba(0,0,0,.6); }
+  .frase em { font-style:normal; color:var(--acento); }
+  .caja-com { display:flex; align-items:center; gap:20px; padding:18px 18px 18px 24px; border-radius:999px; background:rgba(var(--fondo-rgb), .82);
+    backdrop-filter:blur(20px); border:1.5px solid rgba(255,255,255,.16); box-shadow:0 26px 60px rgba(0,0,0,.5); }
+  .avatar { width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg, var(--acento), var(--acento2)); flex:none; display:grid; place-items:center; font:800 34px/1 var(--fuente); color:var(--tinta); }
+  .escribe { flex:1; font:700 44px/1 var(--fuente); color:var(--texto); white-space:nowrap; overflow:hidden; }
+  .escribe .ph { color:var(--mute); font-weight:500; }
+  .cursor { display:inline-block; width:4px; height:46px; background:var(--acento); vertical-align:middle; margin-left:4px; }
+  .enviar { width:84px; height:84px; border-radius:50%; background:var(--acento); color:var(--tinta); display:grid; place-items:center; flex:none; }
+  .publicado { display:flex; align-items:center; gap:20px; margin-top:22px; padding:20px 26px; border-radius:30px; background:rgba(var(--fondo-rgb), .72);
+    border:1.5px solid rgba(255,255,255,.12); font:600 34px/1.2 var(--fuente); }
+  .publicado b { font-weight:800; } .publicado .pal { color:var(--acento); font-weight:800; }
+  .corazon { margin-left:auto; color:#FF3B5C; }
+</style>
+</head><body>
+<script id="params" type="application/json">
+{ "palabra": "CLAUDE", "frase": "Comenta *CLAUDE* y te envío la guía", "usuario": "tu_usuario", "empieza": "", "duracion_cta": 4.2 }
+</script>
+<script>
+const P = JSON.parse(document.getElementById('params').textContent);
+escena({ duracion: REEL.dur, ancho: 1080, alto: 1920, fondo: REEL.capa ? 'transparente' : 'marca' }, (MG) => {
+  REEL.persona(MG);
+  const t0 = (P.empieza ? REEL.t(P.empieza) : null) ?? Math.max(0.3, REEL.dur - P.duracion_cta);
+  const cta = MG.el(`<div class="mg-abs cta">
+    <div class="frase">${P.frase.replace(/\*([^*]+)\*/g, '<em>$1</em>')}</div>
+    <div class="caja-com"><span class="avatar">${P.usuario[0].toUpperCase()}</span><span class="escribe"></span><span class="enviar">${VK.icono('flecha', 44, 'currentColor')}</span></div>
+    <div class="publicado"><span class="avatar" style="width:56px;height:56px;font-size:26px">${P.usuario[0].toUpperCase()}</span><span><b>${P.usuario}</b> <span class="pal">${P.palabra}</span></span><span class="corazon">${VK.icono('estrella', 44, 'currentColor')}</span></div>
+  </div>`);
+  const frase = cta.querySelector('.frase'), caja = cta.querySelector('.caja-com'), esc = cta.querySelector('.escribe'), env = cta.querySelector('.enviar'),
+        pub = cta.querySelector('.publicado'), cor = cta.querySelector('.corazon');
+  // el corazón: un dibujo propio (no un carácter de fuente)
+  cor.innerHTML = '<svg width="46" height="46" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.1C.9 8.6 3 5 6.6 5c2 0 3.6 1.1 5.4 3 1.8-1.9 3.4-3 5.4-3C21 5 23.1 8.6 21.6 11.9 19.5 16.4 12 21 12 21z"/></svg>';
+  const tEsc = t0 + 0.7, porLetra = 0.09, tEnv = tEsc + P.palabra.length * porLetra + 0.25, tPub = tEnv + 0.2;
+  REEL.apunta({ tipo: 'cta', texto: P.frase, palabra: P.palabra, desde: t0, hasta: REEL.dur });
+  return (t) => {
+    const h = cta.offsetHeight, y = REEL.zonaLibre(h, 'abajo');
+    const e = MG.entra(cta, t, t0, { dy: 160, curva: 'salidaQuint', d: 0.5 }); MG.pon(cta, 70 + e.x, y + e.y, e.s);
+    let f = MG.entra(frase, t, t0 + 0.1, { dy: 40 }); frase.style.transform = `translateY(${f.y}px) scale(${f.s})`;
+    f = MG.entra(caja, t, t0 + 0.2, { dy: 60 }); caja.style.transform = `translateY(${f.y}px) scale(${f.s})`;
+    const n = Math.max(0, Math.min(P.palabra.length, Math.floor((t - tEsc) / porLetra) + 1));
+    const parpadeo = Math.floor(t * 2.5) % 2 === 0 || (t > tEsc && t < tEnv);
+    esc.innerHTML = t < tEsc ? `<span class="ph">Añade un comentario…</span>` : (t < tEnv + 0.15 ? P.palabra.slice(0, n) + (parpadeo ? '<span class="cursor"></span>' : '') : '<span class="ph">Añade un comentario…</span>');
+    const pulsa = MG.k(t, tEnv, tEnv + 0.18), rb = MG.curvas.rebote(MG.k(t, tEnv + 0.18, tEnv + 0.7));
+    env.style.transform = `scale(${t < tEnv + 0.18 ? 1 - 0.18 * pulsa : 0.82 + 0.18 * rb})`;
+    f = MG.entra(pub, t, tPub, { dy: 50, d: 0.5 }); pub.style.transform = `translateY(${f.y}px) scale(${f.s})`;
+    const late = MG.curvas.reboteFuerte(MG.k(t, tPub + 0.35, tPub + 1.1)); cor.style.transform = `scale(${late})`;
+  };
+});
+</script>
+</body></html>

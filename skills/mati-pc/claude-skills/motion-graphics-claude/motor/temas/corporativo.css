@@ -1,0 +1,9 @@
+/* Tema «Corporativo» (estilo de la guía de motion graphics). Aplica con --tema corporativo al renderizar, ?tema=corporativo en la vista previa
+   o "tema": "corporativo" en estilo.json. Tipografía: Sora. Curva por defecto: salidaCubica. Trama: rejilla. */
+:root { --tema:'corporativo'; --fondo:#0B1B33; --fondo-rgb:11,27,51; --rejilla:#13284A; --halo:63,169,245; --acento:#3FA9F5; --acento2:#7FD1FF;
+  --texto:#F1F5FB; --mute:#8EA3C2; --tarjeta:#122544; --tarjeta2:#122544; --superficie:#13284A; --tinta:#0B1B33;
+  --claro:255,255,255; --sombra:0,0,0; --borde-tarjeta:rgba(127,209,255,.14); --sombra-tarjeta:rgba(0,0,0,.35);
+  --radio:8px; --fuente:'Sora', 'Sora', 'Inter', sans-serif; --fuente-titulo:'Sora', 'Inter', sans-serif; --fuente-texto:'Sora', 'Inter', sans-serif;
+  --curva:salidaCubica; }
+.mg-fondo-marca { background: radial-gradient(60% 48% at 50% 112%, rgba(var(--halo), .26), rgba(var(--halo), .08) 45%, transparent 72%), linear-gradient(var(--rejilla) 1px, transparent 1px) 0 0/70px 70px, linear-gradient(90deg, var(--rejilla) 1px, transparent 1px) 0 0/70px 70px, var(--fondo); }
+.mg-tarjeta { border-radius: var(--radio); box-shadow: 0 26px 60px var(--sombra-tarjeta), 0 0 0 1px var(--borde-tarjeta); }

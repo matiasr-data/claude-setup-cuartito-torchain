@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- Ejemplo «reel-lista-pasos» · motion-graphics-claude · familia 5 (reels con persona hablando)
+     Una lista de pasos aparece entera (todas las filas juntas, en menos de 0,5 s) debajo de la cara y cada paso se marca
+     con un ✓ dibujado (rebote) justo cuando la persona lo dice. Sale al final con la curva al revés.
+     Parámetros: "titulo", "pasos": [{palabra, texto}], "aparece" (palabra que la hace aparecer; vacía = 0,5 s antes del 1.er paso)
+     Render simple: node scripts/render.mjs video reel-lista-pasos --calidad hd --transparente → python scripts/reel.py componer reel-lista-pasos
+     Capas para editar-reels-claude: python scripts/reel.py capas reel-lista-pasos -->
+<link rel="stylesheet" href="../motor/estilo.css">
+<script src="../motor/kit-escenas.js"></script>
+<script src="../motor/motor.js"></script>
+<script src="../motor/reel.js"></script>
+<style>
+  .lista { width:900px; padding:30px 34px 24px; border-radius:calc(var(--radio) * 1.8); background:rgba(var(--fondo-rgb), .8); backdrop-filter:blur(20px);
+    border:1.5px solid rgba(255,255,255,.14); box-shadow:0 30px 70px rgba(0,0,0,.5); color:var(--texto); font-family:var(--fuente); }
+  .lista h3 { font:700 26px/1 var(--mono); letter-spacing:.18em; text-transform:uppercase; color:var(--acento); margin-bottom:18px; }
+  .fila { display:flex; align-items:center; gap:22px; height:66px; font:700 40px/1 var(--fuente); color:var(--mute); }
+  .caja { width:48px; height:48px; border-radius:14px; border:3px solid rgba(255,255,255,.25); display:grid; place-items:center; flex:none; color:var(--tinta); }
+  .fila.on { color:var(--texto); }
+</style>
+</head><body>
+<script id="params" type="application/json">
+{
+  "titulo": "Claude Duet",
+  "aparece": "",
+  "pasos": [
+    { "palabra": "trabaja",      "texto": "Trabaja mientras duermes" },
+    { "palabra": "proactiva",    "texto": "Es proactiva" },
+    { "palabra": "aplicaciones", "texto": "Usa tus aplicaciones" },
+    { "palabra": "aviso",        "texto": "Te avisa de lo importante" }
+  ]
+}
+</script>
+<script>
+const P = JSON.parse(document.getElementById('params').textContent);
+escena({ duracion: REEL.dur, ancho: 1080, alto: 1920, fondo: REEL.capa ? 'transparente' : 'marca' }, (MG) => {
+  REEL.persona(MG);
+  const pasos = P.pasos.map((p) => ({ ...p, t: REEL.t(p.palabra) }));
+  const primero = Math.min(...pasos.map((p) => p.t ?? Infinity));
+  const t0 = (P.aparece ? REEL.t(P.aparece) : null) ?? (isFinite(primero) ? Math.max(0.2, primero - 0.5) : 0.5);
+  const t1 = REEL.dur - 0.6;
+  const caja = MG.el(`<div class="mg-abs lista"><h3>${P.titulo}</h3>${pasos.map((p) => `<div class="fila"><span class="caja"></span><span>${p.texto}</span></div>`).join('')}</div>`);
+  const filas = [...caja.querySelectorAll('.fila')], cajas = filas.map((f) => f.querySelector('.caja'));
+  cajas.forEach((c) => { c.innerHTML = `<span class="chk">${VK.icono('check', 32, 'currentColor')}</span>`; });
+  const tiempos = MG.juntos(filas.length, t0 + 0.1);
+  REEL.apunta({ tipo: 'lista-pasos', texto: P.titulo, palabra: P.aparece || pasos[0].palabra, desde: t0, hasta: t1 + 0.4 });
+  return (t) => {
+    const h = caja.offsetHeight, y = REEL.zonaLibre(h, 'abajo');
+    const e = MG.entra(caja, t, t0, { dy: 140, curva: 'salidaQuint', d: 0.5 });
+    const s = REEL.sale(MG, caja, t, t1, { dy: 120 });
+    MG.pon(caja, 90 + e.x, y + e.y + s.y, e.s * s.s); caja.style.opacity = Math.min(+caja.style.opacity, s.op);
+    filas.forEach((f, i) => {
+      const ef = MG.entra(f, t, tiempos[i], { dy: 30, d: 0.4 }); f.style.transform = `translateY(${ef.y}px)`;
+      const p = pasos[i], on = p.t !== null && t >= p.t - 0.08;
+      f.classList.toggle('on', on);
+      const k = p.t === null ? 0 : MG.curvas.rebote(MG.k(t, p.t - 0.08, p.t + 0.5));   // ✓ con rebote natural
+      cajas[i].style.background = on ? 'var(--acento)' : 'transparent'; cajas[i].style.borderColor = on ? 'var(--acento)' : 'rgba(255,255,255,.25)';
+      cajas[i].firstChild.style.display = 'block'; cajas[i].firstChild.style.transform = `scale(${k})`;
+    });
+  };
+});
+</script>
+</body></html>

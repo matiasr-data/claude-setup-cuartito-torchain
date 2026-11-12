@@ -1,0 +1,18 @@
+{
+  "bruto": "brutos/DJI_20260930202212_0041_D.MP4",
+  "fps": [30000, 1001],
+  "nota": "PROPUESTA pendiente de aprobar (HOJA.md). Tiempos en segundos del bruto; se ajustan a fotograma al montar. zoom = escala del plano (1.0 / 1.12 alternos para tapar el salto).",
+  "tramos": [
+    {"id": 1,  "ini": 23.36,  "fin": 69.10,  "zoom": 1.00, "corte_previo": "Fuera 0:00–0:23: preparación, falsa toma (\"Ok, estamos ahora mismo… esto lo voy a quitar\") y 6,8 s de silencio. Se queda la última toma."},
+    {"id": 2,  "ini": 70.26,  "fin": 76.30,  "zoom": 1.12, "corte_previo": "Fuera 1,2 s de titubeo entre \"que parece que\" y \"tienes tortícolis\"."},
+    {"id": 3,  "ini": 81.62,  "fin": 106.90, "zoom": 1.00, "corte_previo": "Fuera frase repetida: \"o sea, tenía ganas de, literalmente, irme, o sea…\" (5,3 s). Queda \"…tío, me voy. Tenía literalmente ganas de coger e irme a dormir\"."},
+    {"id": 4,  "ini": 108.02, "fin": 133.80, "zoom": 1.12, "corte_previo": "Fuera arranque fallido \"Y que, joder,\" (1,1 s)."},
+    {"id": 5,  "ini": 134.60, "fin": 237.68, "zoom": 1.00, "corte_previo": "Pausa de 1,2 s recortada a 0,4 s."},
+    {"id": 6,  "ini": 238.53, "fin": 338.02, "zoom": 1.12, "corte_previo": "Pausa de 1,25 s recortada a 0,4 s."},
+    {"id": 7,  "ini": 340.52, "fin": 379.40, "zoom": 1.00, "corte_previo": "Fuera titubeo \"desde hace un año, en septiembre del año pasado\" (2,5 s); queda la versión buena: \"a 30 de septiembre del año pasado\"."},
+    {"id": 8,  "ini": 381.81, "fin": 395.23, "zoom": 1.12, "corte_previo": "Fuera la primera despedida (\"Así que nada, seguimos con el vlog, espero que te esté gustando\"): se repite al final y se queda la última."},
+    {"id": 9,  "ini": 396.64, "fin": 398.80, "zoom": 1.00, "corte_previo": "Pausa de 1,8 s (mirando el móvil) recortada a 0,4 s."},
+    {"id": 10, "ini": 400.04, "fin": 404.95, "zoom": 1.12, "corte_previo": "Pausa de 1,6 s recortada a 0,4 s."},
+    {"id": 11, "ini": 414.10, "fin": 427.75, "zoom": 1.00, "corte_previo": "Fuera 9 s tecleando en el móvil y murmurando (\"aquí son muy majos\"). Después del \"Chao\" se quitan 4 s de cola."}
+  ]
+}

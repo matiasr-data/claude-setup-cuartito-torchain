@@ -1,0 +1,47 @@
+/* Estilo «cristal líquido» de Viegas Estudio para gráficos de reels 4K (2160×3840).
+   El desenfoque (backdrop-filter) solo funciona si el VÍDEO está dentro del mismo render:
+   por eso los gráficos se renderizan encima de base.mp4 (etapa 2), no como capa transparente aparte.
+   Cambia la paleta por la de tu guía de estilo. */
+
+.glass {
+  position: relative; overflow: hidden; border-radius: 64px;
+  background: linear-gradient(160deg, rgba(42,26,69,.52), rgba(21,10,36,.58));
+  border: 3px solid rgba(168,85,247,.38);
+  backdrop-filter: blur(46px) saturate(1.45);
+  -webkit-backdrop-filter: blur(46px) saturate(1.45);
+  box-shadow: 0 70px 150px -50px rgba(0,0,0,.8), inset 0 3px 0 rgba(255,255,255,.16), 0 0 80px -20px rgba(124,58,237,.55);
+}
+/* filo de luz en el borde superior */
+.glass::before {
+  content: ""; position: absolute; top: 0; left: 12%; right: 12%; height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(220,190,255,.9), transparent);
+}
+/* barrido de luz: anímalo con GSAP de x: -300 a x: 2100 (0,9 s, power2.inOut) 0,3 s después de entrar */
+.sweep {
+  position: absolute; top: -10%; bottom: -10%; left: 0; width: 220px; transform: skewX(-18deg);
+  background: linear-gradient(100deg, transparent, rgba(255,236,178,.22), transparent); pointer-events: none;
+}
+/* variante dorada (prompts, llamadas a la acción) */
+.glass.gold { border-color: rgba(242,200,75,.6); box-shadow: 0 0 90px -10px rgba(242,200,75,.45), 0 70px 150px -50px rgba(0,0,0,.8); }
+
+/* Posición de las tarjetas: SIEMPRE por debajo de la barbilla, comprobado con el zoom máximo.
+   Zona segura de Instagram en 4K: 440 px arriba, 760 px abajo, 280 px a la derecha. */
+.card-slot { position: absolute; left: 0; right: 0; top: 2130px; display: flex; justify-content: center; }
+.captions-box { position: absolute; left: 160px; right: 300px; top: 2520px; height: 520px; display: flex; align-items: center; justify-content: center; text-align: center; }
+
+/* Palabra gigante DETRÁS de la cabeza (capa «behind», que luego se compone con el mate del sujeto) */
+.behind-word {
+  font-family: "Anton", sans-serif; line-height: .9; white-space: nowrap;
+  background: linear-gradient(180deg, #fff2c4 0%, #f6cf5c 50%, #e0a52a 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 0 60px rgba(242,200,75,.45)) drop-shadow(0 24px 40px rgba(9,4,15,.55));
+}
+
+/* Escena a pantalla completa con fondo limpio: orbes de degradado (anímalos con x/y), cuadrícula, viñeta y grano */
+.fs-grid {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(168,85,247,.09) 2px, transparent 2px), linear-gradient(90deg, rgba(168,85,247,.09) 2px, transparent 2px);
+  background-size: 120px 120px;
+  mask-image: radial-gradient(ellipse 85% 70% at 50% 45%, #000 35%, transparent 100%);
+}
+.fs-vign { position: absolute; inset: 0; background: radial-gradient(140% 110% at 50% 0%, transparent 45%, rgba(4,2,10,.9) 100%); }

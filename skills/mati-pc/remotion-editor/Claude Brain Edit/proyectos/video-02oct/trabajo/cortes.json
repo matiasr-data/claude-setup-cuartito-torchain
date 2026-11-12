@@ -1,0 +1,281 @@
+{
+ "bruto": "/Users/pablolluch/Desktop/DJI_20261002184020_0013_D.MP4",
+ "fps": [
+  30000,
+  1001
+ ],
+ "frames": 6999,
+ "duracion": 233.533,
+ "tramos": [
+  {
+   "id": 0,
+   "bloque": "A_gancho",
+   "primero_de_bloque": true,
+   "ini": 11.6116,
+   "fin": 19.1525,
+   "frames": 226,
+   "montaje_frame": 0,
+   "montaje_ini": 0.0
+  },
+  {
+   "id": 1,
+   "bloque": "B_skill",
+   "primero_de_bloque": true,
+   "ini": 24.1908,
+   "fin": 28.2282,
+   "frames": 121,
+   "montaje_frame": 226,
+   "montaje_ini": 7.5409
+  },
+  {
+   "id": 2,
+   "bloque": "C_sincero",
+   "primero_de_bloque": true,
+   "ini": 34.9683,
+   "fin": 41.6416,
+   "frames": 200,
+   "montaje_frame": 347,
+   "montaje_ini": 11.5782
+  },
+  {
+   "id": 3,
+   "bloque": "C_sincero",
+   "primero_de_bloque": false,
+   "ini": 42.3089,
+   "fin": 46.9135,
+   "frames": 138,
+   "montaje_frame": 547,
+   "montaje_ini": 18.2516
+  },
+  {
+   "id": 4,
+   "bloque": "C_sincero",
+   "primero_de_bloque": false,
+   "ini": 47.4808,
+   "fin": 56.5231,
+   "frames": 271,
+   "montaje_frame": 685,
+   "montaje_ini": 22.8562
+  },
+  {
+   "id": 5,
+   "bloque": "C_sincero",
+   "primero_de_bloque": false,
+   "ini": 57.0904,
+   "fin": 67.7677,
+   "frames": 320,
+   "montaje_frame": 956,
+   "montaje_ini": 31.8985
+  },
+  {
+   "id": 6,
+   "bloque": "C_sincero",
+   "primero_de_bloque": false,
+   "ini": 68.435,
+   "fin": 70.6706,
+   "frames": 67,
+   "montaje_frame": 1276,
+   "montaje_ini": 42.5759
+  },
+  {
+   "id": 7,
+   "bloque": "C_sincero",
+   "primero_de_bloque": false,
+   "ini": 71.071,
+   "fin": 82.9162,
+   "frames": 355,
+   "montaje_frame": 1343,
+   "montaje_ini": 44.8114
+  },
+  {
+   "id": 8,
+   "bloque": "D_editores",
+   "primero_de_bloque": true,
+   "ini": 90.2235,
+   "fin": 98.8988,
+   "frames": 260,
+   "montaje_frame": 1698,
+   "montaje_ini": 56.6566
+  },
+  {
+   "id": 9,
+   "bloque": "D_editores",
+   "primero_de_bloque": false,
+   "ini": 99.2658,
+   "fin": 105.8057,
+   "frames": 196,
+   "montaje_frame": 1958,
+   "montaje_ini": 65.3319
+  },
+  {
+   "id": 10,
+   "bloque": "D_editores",
+   "primero_de_bloque": false,
+   "ini": 106.0393,
+   "fin": 116.6499,
+   "frames": 318,
+   "montaje_frame": 2154,
+   "montaje_ini": 71.8718
+  },
+  {
+   "id": 11,
+   "bloque": "E_razones",
+   "primero_de_bloque": true,
+   "ini": 121.3212,
+   "fin": 123.6569,
+   "frames": 70,
+   "montaje_frame": 2472,
+   "montaje_ini": 82.4824
+  },
+  {
+   "id": 12,
+   "bloque": "E_razones",
+   "primero_de_bloque": false,
+   "ini": 124.0239,
+   "fin": 130.0966,
+   "frames": 182,
+   "montaje_frame": 2542,
+   "montaje_ini": 84.8181
+  },
+  {
+   "id": 13,
+   "bloque": "E_razones",
+   "primero_de_bloque": false,
+   "ini": 130.4303,
+   "fin": 149.8497,
+   "frames": 582,
+   "montaje_frame": 2724,
+   "montaje_ini": 90.8908
+  },
+  {
+   "id": 14,
+   "bloque": "F_mejor_video",
+   "primero_de_bloque": true,
+   "ini": 154.5878,
+   "fin": 169.8697,
+   "frames": 458,
+   "montaje_frame": 3306,
+   "montaje_ini": 110.3102
+  },
+  {
+   "id": 15,
+   "bloque": "F_mejor_video",
+   "primero_de_bloque": false,
+   "ini": 170.4036,
+   "fin": 173.2064,
+   "frames": 84,
+   "montaje_frame": 3764,
+   "montaje_ini": 125.5921
+  },
+  {
+   "id": 16,
+   "bloque": "F_mejor_video",
+   "primero_de_bloque": false,
+   "ini": 173.54,
+   "fin": 175.3418,
+   "frames": 54,
+   "montaje_frame": 3848,
+   "montaje_ini": 128.3949
+  },
+  {
+   "id": 17,
+   "bloque": "F_mejor_video",
+   "primero_de_bloque": false,
+   "ini": 175.809,
+   "fin": 183.0162,
+   "frames": 216,
+   "montaje_frame": 3902,
+   "montaje_ini": 130.1967
+  },
+  {
+   "id": 18,
+   "bloque": "F2_toque",
+   "primero_de_bloque": true,
+   "ini": 186.1193,
+   "fin": 191.0909,
+   "frames": 149,
+   "montaje_frame": 4118,
+   "montaje_ini": 137.4039
+  },
+  {
+   "id": 19,
+   "bloque": "F2_toque",
+   "primero_de_bloque": false,
+   "ini": 191.6248,
+   "fin": 195.829,
+   "frames": 126,
+   "montaje_frame": 4267,
+   "montaje_ini": 142.3756
+  },
+  {
+   "id": 20,
+   "bloque": "F2_toque",
+   "primero_de_bloque": false,
+   "ini": 196.3628,
+   "fin": 197.4306,
+   "frames": 32,
+   "montaje_frame": 4393,
+   "montaje_ini": 146.5798
+  },
+  {
+   "id": 21,
+   "bloque": "G_horas",
+   "primero_de_bloque": true,
+   "ini": 199.8997,
+   "fin": 202.8026,
+   "frames": 87,
+   "montaje_frame": 4425,
+   "montaje_ini": 147.6475
+  },
+  {
+   "id": 22,
+   "bloque": "G_horas",
+   "primero_de_bloque": false,
+   "ini": 203.3365,
+   "fin": 216.1159,
+   "frames": 383,
+   "montaje_frame": 4512,
+   "montaje_ini": 150.5504
+  },
+  {
+   "id": 23,
+   "bloque": "G_horas",
+   "primero_de_bloque": false,
+   "ini": 216.6498,
+   "fin": 223.3565,
+   "frames": 201,
+   "montaje_frame": 4895,
+   "montaje_ini": 163.3298
+  },
+  {
+   "id": 24,
+   "bloque": "H_12dias",
+   "primero_de_bloque": true,
+   "ini": 243.5099,
+   "fin": 251.5179,
+   "frames": 240,
+   "montaje_frame": 5096,
+   "montaje_ini": 170.0365
+  },
+  {
+   "id": 25,
+   "bloque": "H_12dias",
+   "primero_de_bloque": false,
+   "ini": 251.885,
+   "fin": 258.1913,
+   "frames": 189,
+   "montaje_frame": 5336,
+   "montaje_ini": 178.0445
+  },
+  {
+   "id": 26,
+   "bloque": "I_pablo",
+   "primero_de_bloque": true,
+   "ini": 264.9313,
+   "fin": 314.1138,
+   "frames": 1474,
+   "montaje_frame": 5525,
+   "montaje_ini": 184.3508
+  }
+ ]
+}

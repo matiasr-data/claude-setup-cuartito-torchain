@@ -1,0 +1,94 @@
+{
+ "fps": 29.97002997002997,
+ "duracion": 378.4447,
+ "tramos": [
+  {
+   "id": 1,
+   "bruto_ini": 23.3567,
+   "bruto_fin": 69.1024,
+   "montaje_ini": 0.0,
+   "frames": 1371,
+   "zoom": 1.0
+  },
+  {
+   "id": 2,
+   "bruto_ini": 70.2702,
+   "bruto_fin": 76.3096,
+   "montaje_ini": 45.7457,
+   "frames": 181,
+   "zoom": 1.12
+  },
+  {
+   "id": 3,
+   "bruto_ini": 81.6149,
+   "bruto_fin": 106.9068,
+   "montaje_ini": 51.7851,
+   "frames": 758,
+   "zoom": 1.0
+  },
+  {
+   "id": 4,
+   "bruto_ini": 108.0079,
+   "bruto_fin": 133.8003,
+   "montaje_ini": 77.077,
+   "frames": 773,
+   "zoom": 1.12
+  },
+  {
+   "id": 5,
+   "bruto_ini": 134.6011,
+   "bruto_fin": 237.6708,
+   "montaje_ini": 102.8694,
+   "frames": 3089,
+   "zoom": 1.0
+  },
+  {
+   "id": 6,
+   "bruto_ini": 238.5383,
+   "bruto_fin": 338.0043,
+   "montaje_ini": 205.9391,
+   "frames": 2981,
+   "zoom": 1.12
+  },
+  {
+   "id": 7,
+   "bruto_ini": 340.5068,
+   "bruto_fin": 379.4124,
+   "montaje_ini": 305.4051,
+   "frames": 1166,
+   "zoom": 1.0
+  },
+  {
+   "id": 8,
+   "bruto_ini": 381.8148,
+   "bruto_fin": 395.2282,
+   "montaje_ini": 344.3106,
+   "frames": 402,
+   "zoom": 1.12
+  },
+  {
+   "id": 9,
+   "bruto_ini": 396.6296,
+   "bruto_fin": 398.7984,
+   "montaje_ini": 357.724,
+   "frames": 65,
+   "zoom": 1.0
+  },
+  {
+   "id": 10,
+   "bruto_ini": 400.033,
+   "bruto_fin": 404.9379,
+   "montaje_ini": 359.8929,
+   "frames": 147,
+   "zoom": 1.12
+  },
+  {
+   "id": 11,
+   "bruto_ini": 414.1137,
+   "bruto_fin": 427.7607,
+   "montaje_ini": 364.7978,
+   "frames": 409,
+   "zoom": 1.0
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+/* Tema «Viegas oscuro» (estilo de la guía de motion graphics). Aplica con --tema viegas-oscuro al renderizar, ?tema=viegas-oscuro en la vista previa
+   o "tema": "viegas-oscuro" en estilo.json. Tipografía: Bricolage Grotesque + Figtree (la guía dice «SF Compact / Bricolage»: aquí se usa Bricolage Grotesque, libre). Curva por defecto: rebote. Trama: rejilla. */
+:root { --tema:'viegas-oscuro'; --fondo:#0D0C0F; --fondo-rgb:13,12,15; --rejilla:#1A181C; --halo:217,119,87; --acento:#D97757; --acento2:#E78F72;
+  --texto:#F4F2EE; --mute:#A39F98; --tarjeta:#18171B; --tarjeta2:#18171B; --superficie:#1A181C; --tinta:#120a06;
+  --claro:255,255,255; --sombra:0,0,0; --borde-tarjeta:rgba(255,255,255,.08); --sombra-tarjeta:rgba(0,0,0,.55);
+  --radio:14px; --fuente:'Bricolage Grotesque', 'Figtree', 'Inter', sans-serif; --fuente-titulo:'Bricolage Grotesque', 'Inter', sans-serif; --fuente-texto:'Figtree', 'Inter', sans-serif;
+  --curva:rebote; }
+.mg-fondo-marca { background: radial-gradient(60% 48% at 50% 112%, rgba(var(--halo), .26), rgba(var(--halo), .08) 45%, transparent 72%), linear-gradient(var(--rejilla) 1px, transparent 1px) 0 0/70px 70px, linear-gradient(90deg, var(--rejilla) 1px, transparent 1px) 0 0/70px 70px, var(--fondo); }
+.mg-tarjeta { border-radius: var(--radio); box-shadow: 0 26px 60px var(--sombra-tarjeta), 0 0 0 1px var(--borde-tarjeta); }

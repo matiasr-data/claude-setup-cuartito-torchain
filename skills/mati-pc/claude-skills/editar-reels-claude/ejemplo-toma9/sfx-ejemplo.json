@@ -1,0 +1,8 @@
+[
+  {"file": "sfx/impact.wav", "t": 0.0, "db": -16},
+  {"file": "sfx/whoosh.wav", "t": 2.26, "db": -21},
+  {"file": "sfx/uiclick.wav", "t": 3.2, "db": -22, "max": 0.3},
+  {"file": "sfx/whoosh.wav", "t": 11.28, "db": -18},
+  {"file": "sfx/riser.wav", "t": 15.2, "db": -24},
+  {"file": "sfx/braaam.wav", "t": 35.58, "db": -20}
+]

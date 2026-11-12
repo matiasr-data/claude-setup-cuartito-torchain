@@ -1,0 +1,10 @@
+/* Tema «Brutalista» (estilo de la guía de motion graphics). Aplica con --tema brutalista al renderizar, ?tema=brutalista en la vista previa
+   o "tema": "brutalista" en estilo.json. Tipografía: Archivo Black. Curva por defecto: pasos. Trama: nada. */
+:root { --tema:'brutalista'; --fondo:#F2EE1E; --fondo-rgb:242,238,30; --rejilla:#E2DE10; --halo:255,59,31; --acento:#111111; --acento2:#FF3B1F;
+  --texto:#111111; --mute:#3A3A1E; --tarjeta:#FFFFFF; --tarjeta2:#FFFFFF; --superficie:#E2DE10; --tinta:#F2EE1E;
+  --claro:0,0,0; --sombra:60,50,80; --borde-tarjeta:#111111; --sombra-tarjeta:#111111;
+  --radio:0px; --fuente:'Archivo Black', 'Figtree', 'Inter', sans-serif; --fuente-titulo:'Archivo Black', 'Inter', sans-serif; --fuente-texto:'Figtree', 'Inter', sans-serif;
+  --curva:pasos; }
+.mg-fondo-marca { background:   var(--fondo); }
+.mg-tarjeta { border-radius: var(--radio); box-shadow: 0 26px 60px var(--sombra-tarjeta), 0 0 0 1px var(--borde-tarjeta); }
+.mg-tarjeta, .mg-cristal { border: 3px solid #111 !important; box-shadow: 10px 10px 0 #111 !important; }

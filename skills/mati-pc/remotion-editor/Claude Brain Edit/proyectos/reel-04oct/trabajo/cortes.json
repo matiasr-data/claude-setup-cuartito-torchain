@@ -1,0 +1,21 @@
+{
+ "bruto": "/Users/pablolluch/Downloads/IMG_9053.MOV",
+ "fps": [
+  30,
+  1
+ ],
+ "frames": 1140,
+ "duracion": 38.0,
+ "tramos": [
+  {
+   "id": 0,
+   "bloque": "reel",
+   "primero_de_bloque": true,
+   "ini": 0.62,
+   "fin": 38.62,
+   "frames": 1140,
+   "montaje_frame": 0,
+   "montaje_ini": 0.0
+  }
+ ]
+}

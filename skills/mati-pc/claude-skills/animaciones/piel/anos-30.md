@@ -1,0 +1,59 @@
+# 14 · Años 30
+**En una frase:** un dibujo animado de los años 30 en blanco y negro: tinta gruesa que hierve, brazos de manguera, guantes blancos y ojos de pastel cortado, todo lo de la escena con cara y balanceándose al compás de una banda, a 12 dibujos por segundo, y encima una película vieja con grano, rayas, polvo y parpadeo.
+
+## La piel (igual en cualquier escena)
+- **Colores:** solo grises; ningún color.
+  - `G`: blanco `#FCFBF7` (personajes, guantes, ojos, estrellas), papel `#F1EEE6`, pálido `#E2DFD6`, claro `#C8C5BC`, medio `#9A978F`, oscuroMedio `#6B6963`, oscuro `#3B3A37` y tinta `#0E0D0C` (`TINTA`: la línea, el pelo, el pantalón, los zapatones y las pupilas).
+  - Los fondos, en grises medios y con su propia línea, `LF` `#2A2927`: la pared `#8C8981` con rayas `#96938B` y rombitos `#73706A`, el zócalo `#77746D` con paneles `#827F78`, la moldura `#A9A69E`, el rodapié `#4F4D48`, la pared de lado en sombra `#6E6B65` y el suelo en damero `#B9B6AE` / `#6F6C66`.
+  - La camisa `#E9E6DD` con su sombra `#B3B0A8`; un hueco oscuro (la boca de la papelera) `#2B2A27`; detrás de todo `#050505`. La escena (no la película) pasa por `contrast(1.13)`.
+  - La película: el parpadeo `#FFFCF0` o `#000` (hasta ~0,075), las rayas `rgba(245,242,230,.55)` o `rgba(10,10,8,.5)`, las motas `rgba(12,11,10,.8)` o `rgba(250,248,240,.75)` y el pelo `rgba(15,14,12,.65)`.
+- **Letras:** ninguna. No hay texto en pantalla: todo se cuenta con caras, gestos y estrellas.
+- **El trazo:**
+  - Todo se pinta en un `Lienzo` con los puntos ya en la pantalla: las transformaciones (`afRot`, `afEsc`, `afEstira`, `afTras`, `afMul`) se aplican a los puntos con `apl` antes de entintar, así la tinta tiene siempre el mismo grueso aunque la pieza se estire.
+  - La tinta hierve: el contorno se remuestrea cada 8 px y cada punto se mueve un pelo por su normal con un ruido que cambia con el dibujo y se repite cada 3 (`dibujo % 3`). El `Lienzo` de cada cuadro va con `amp` 2,1 y cada forma lo escala con `hierve` (0 = quieto, 0,3–0,6 para lo pequeño o suave, 1 = normal).
+  - Relleno plano, **una** banda de sombra de borde duro (`sombra: {col, dx, dy}`: el relleno se corre hacia la luz, que viene de arriba a la izquierda, y queda la banda del otro lado) y la tinta encima: 8 px por defecto, 9 en el personaje (`LW`), 7 en guantes y zapatones, 4,5 en los fondos (`LWF`).
+  - Varias piezas con un solo contorno (los guantes): `union`, todas en tinta al doble y después todas rellenas. Lo que va dentro de una forma (la pupila, una rejilla), con `dentro`, recortado por ella.
+- **El fondo y el escenario:** un telón quieto, pintado una vez fuera del componente en un `Lienzo` sin hervor (`FONDO`, con `amp` 0 y `hierve: 0`): pared de papel de rayas con rombitos, zócalo de paneles, suelo de damero en perspectiva (baldosas de 140, con `proyecta`), una ventana con nubes y tejados con chimeneas, y los muebles con sombras planas de `TINTA` al 0,22–0,32. Encima, manchas de acuarela y grano de papel (`texturaAcuarela`, pintada en un canvas una vez). Los fondos no hierven: solo lo que vive.
+- **Los personajes y adornos fijos** (`partes.ts`):
+  - Ojos de «pastel cortado» (`ojo`): blancos, con la pupila negra a la que le falta una cuña arriba a la derecha, que mira a (`lx`, `ly`); tipos abierto, grande, feliz, cerrado, aprieta, espiral (mareado) y medio (con párpado).
+  - Cejas (`ceja`: arriba, triste, enfado, plana); 11 bocas (`boca`: sonrisa, triste, plana, lado, ondas, o, lengua, abierta, risa, grande, dientes); guantes blancos de cuatro dedos con tres costuras (`guante`: abierta, puño, señala); zapatones negros con su brillo (`zapato`); notas musicales (`nota`) y gotas de sudor (`gota`).
+  - Brazos y piernas de manguera (`manguera`): una sola curva que pasa por donde estaría el codo, sin codos, en tinta. La cabeza, una superelipse blanca (exponente 2,6), con orejas, nariz negra con su brillo y el pelo negro con un brillo blanco.
+  - Todo lo que importa tiene cara y vive: la papelera y la lámpara miran la bola, la radio canta (su rejilla es la boca, con notas que suben), los libros bailan en ola, las cortinas y el cuadro se mecen.
+  - Encima de todo, la película vieja (`Pelicula30`): seis láminas de grano barajadas en cada cuadro (`overlay` al 0,55), el parpadeo del proyector, de 0 a 3 rayas verticales que duran unos cuadros, de 4 a 10 motas distintas en cada cuadro, un pelo de vez en cuando, la viñeta redonda (hasta 0,66 en los bordes) y la ventanilla con las esquinas redondas (radio 46, a 10 px del borde).
+- **El movimiento:**
+  - «A dos»: `PASOS` = 12 dibujos por segundo para los personajes, el decorado y la tinta (`tq`); lo que vuela, «a unos»: `PASOS_BOLA` = 24 (`tb`). Las dos con su fase: un dibujo cae justo en el primer golpe.
+  - Al compás de una banda de 144 por minuto (`PULSO` = 60 / 144 s, 10 cuadros de 24): `latido = cos(2π · (tq − T1) / PULSO)`, así un tiempo cae en el golpe. Todo respira con él, estirándose y achatándose desde su base: la papelera (±4,5 %, menos cuando la bola anda cerca), el cuerpo (±3,5 %), los libros en ola (cada uno 0,55 rad detrás del anterior, ±7 %), la radio (±8 %), la pantalla de la lámpara y las cortinas (±7 px).
+  - Aplastar y estirar exagerados: lo que vuela se estira con su velocidad (hasta 1,42 veces) y se aplasta contra lo que toca (hasta 0,45), sin perder área (`afEstira`); a más de 700 px/s deja tres rayas de velocidad que siguen su camino de verdad.
+  - La cámara va a 60: el empujón de cada golpe, el vaivén del proyector (`ruido`, ±1,5 px), un salto de ±3 px de vez en cuando y un acercamiento lento del 2 % (desde 58 % 60 %). La película va a 24.
+- **El momento:** el golpe es una estrella blanca de 7 puntas que revienta en cuatro dibujos (`TAM`: 1, 1,28, 0,9 y 0,5: sale, se pasa y se encoge), con 8 líneas de impacto y tres estrellitas que saltan y caen; en el suelo, nubecitas de polvo pálidas que se abren a los lados; si entra, estrellitas de 4 puntas saltan de la boca. Y todos reaccionan:
+  - La papelera mira la bola con los ojos grandes y la boca en «o» cuando se acerca; le duele cada golpe en el borde (aprieta los ojos, boca en ondas y se aplasta), y si falla se burla (ojos felices, cejas de pillo y la lengua fuera). La lámpara golpeada aprieta los ojos y se marea (ojos en espiral y `estrellasMareo`); si la bola da en la pared, el cuadro se tuerce de golpe.
+  - El personaje lleva sus gestos alrededor de la cabeza: gotas de sudor que saltan, rayas de sorpresa (y el pelo de punta), una nubecita negra con su rayo, una gota en la sien o estrellitas.
+
+## Dónde está en el código
+- **Piel (se reutiliza tal cual):**
+  - `src/estilos/bola/anos30/tinta.tsx`: `G`, `TINTA`, `P`; las transformaciones `Af`, `AF`, `afMul`, `afTras`, `afRot`, `afEsc`, `afEstira`, `ap` y `apl`; las formas `elipse`, `arco`, `quad`, `porMedio`, `spline`, `rr`, `rect`, `poliRedondo`, `envolvente`, `cinta`, `manguera` y `estrella`; `Op` y `Lienzo` (`forma`, `trazo`, `union`, `punto`).
+  - `src/estilos/bola/anos30/partes.ts`: `ojo` (`TipoOjo`, `OjoOp`), `ceja` (`TipoCeja`), `boca` (`TipoBoca`), `guante` (`TipoMano`), `zapato`, `nota` y `gota`.
+  - `src/estilos/bola/anos30/Pelicula30.tsx`: `Pelicula30`, `texturaAcuarela` y `texturaGrano`.
+  - `src/estilos/bola/anos30/Anos30.tsx`: `PASOS`, `PASOS_BOLA`, `PULSO`, las fases, `paso`, `tq`, `tb`, `latido`, el `Lienzo` del cuadro (prefijo con `useId`, `amp` 2,1), las capas (el telón, la acuarela, el `Lienzo` y la película) y la cámara.
+  - `src/estilos/bola/anos30/Efectos30.ts`: `dibujaGolpes` (con `TAM`), `estrellasMareo` y la receta de aplastar y estirar con sus rayas de velocidad (dentro de `dibujaBola`).
+  - `src/estilos/bola/anos30/Muneco30.ts`: `LW`, `CAMISA`, `CAMISA_SOMBRA`, `CARAS` (cada cara de la escena en ojos, cejas y boca) y los gestos alrededor de la cabeza (al final de `dibujaMuneco`).
+  - `src/estilos/bola/anos30/Decorado30.ts`: `LF`, `LWF` y la manera de pintar el telón (`pintaFondo`).
+- **Ayudas:** `clamp`, `mix`, `rng` y `ruido` de `src/comun/curvas.ts`; `proyecta`, `escalaEn`, `temblor`, `lanzamiento`, `bola`, `T_PRIMERO` y `DUR` de `src/estilos/bola/escena.ts`.
+- **Lo de la bola y el muñeco (se rehace):** en `Decorado30.ts`, la oficina de `pintaFondo` (`Y_MOLDURA`, `Y_RODAPIE`), `dibujaCortinas`, `dibujaCuadro`, `LIBROS` y `dibujaBalda`, `dibujaRadio`, `dibujaLuz`, `dibujaLampara`, `EstadoLampara`, `EstadoPapelera`, `papeleraDetras`, `papeleraDelante` y `sombraPapelera`; en `Muneco30.ts`, `dibujaSilla`, `sombraSilla` y el cuerpo de `dibujaMuneco`; en `Efectos30.ts`, `CONTORNO`, `PLIEGUES`, `bolaDetras`, `sombraBola` y `arcosAro`; en `Anos30.tsx`, las caras de la papelera y de la lámpara en cada instante (`cerca`, `aplasta`, `duele`, `fuera`, `ojosL`, `mareo`). Lo que pasa sale de `src/estilos/bola/escena.ts`: `esqueleto`, `giroRaiz`, `centroLampara` y las medidas (`SUELO`, `PAPELERA`, `SILLA`, `MESA`…).
+
+## Pintar tu escena en este estilo
+1. Copia `src/estilos/bola/anos30/` a `src/estilos/<tu-escena>/anos30/` (los imports de `../escena`, a tu escena). `tinta.tsx`, `partes.ts` y `Pelicula30.tsx` van tal cual. Tu escena, en un `escena.ts` aparte que sale solo de `t`; si es plana, en z = 0, donde `proyecta` la deja tal cual.
+2. En `Anos30.tsx` deja `PASOS`, `PASOS_BOLA`, `PULSO`, las fases y el `latido` con `T1` = el instante de tu golpe (ahí caen un dibujo y un tiempo de la banda), el `Lienzo` con `amp` 2,1, las cuatro capas y la cámara (con el `temblor` de `src/comun/curvas.ts` en tu golpe si tu escena no trae uno).
+3. Tu telón, en una función como `pintaFondo`: todo con `{lw: LWF, linea: LF, hierve: 0}`, en grises medios, con un papel de rayas o un damero, y pintado una vez fuera del componente en su propio `Lienzo` (como `FONDO`).
+4. **Un personaje nuevo:** el cuerpo, un «frijol» (un `spline` cerrado por un perfil) con su `sombra`; brazos y piernas con `manguera(a, codo, b, 21, 19)` en `TINTA`; las manos con `guante`, los pies con `zapato`; la cabeza, la superelipse de `dibujaMuneco` en blanco con `sombra: {col: G.palido, dx: 14, dy: 8}`; la cara con `ojo`, `ceja`, `boca` y una nariz negra con su brillo. De atrás adelante: lo que va detrás del cuerpo, antes.
+5. **Un objeto con vida:** ojos y boca que miren lo que pasa (los de la papelera: ojos de 25 × 33 y boca de 74), que respire con el `latido` desde su base y que reaccione al golpe (dolor, burla, mareo). Lo de alrededor, en ola como `dibujaBalda` o cantando como `dibujaRadio`.
+6. El golpe: `dibujaGolpes` con tus golpes (`{t, tipo, fuerza, n, p}`; en una escena plana, `p` = `[x, y, 0]`), aplastar y estirar en lo que se mueve con `afEstira`, y lo rápido con `tb`. Primero una foto en el golpe; después, el vídeo en baja.
+
+**Errores fáciles:**
+- Mover algo con `t`: va a 60 y deja de ser un dibujo de los 30. Todo con `tq`; con `tb`, solo lo que vuela; con `t`, solo la cámara y la película.
+- Girar o estirar con un `transform` del SVG: la tinta se deforma con la pieza. Las transformaciones, a los puntos (`apl`) antes de `L.forma`.
+- La misma semilla en dos formas: hierven igual, como pegadas. Cada `L.forma` con su número (el código los reparte por bloques: la silla en los 300, los brazos en los 400, la cabeza en los 700…).
+- El fondo dentro del `Lienzo` de cada cuadro o con `hierve` > 0: todo vibra y no se distingue lo que vive. Y meter color: la piel es la escala `G`.
+- Poner la banda de sombra del lado de la luz: con `dx` y `dy` positivos queda abajo a la derecha, lejos de la luz de arriba a la izquierda.
+- Lo importante en las esquinas: la ventanilla las redondea y la viñeta las oscurece.
+- `texturaAcuarela` y `texturaGrano` se pintan en un canvas del navegador: fuera de él devuelven '' y no salen. Y un `Lienzo` creado fuera de un componente necesita un prefijo propio (como `'a30f'`): sus recortes (`clipPath`) se nombran con él y no pueden repetirse.

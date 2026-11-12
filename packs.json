@@ -1,0 +1,84 @@
+{
+  "proyecto": [
+    "skills/proyecto"
+  ],
+  "herramientas": [
+    "skills/plugins-claude/find-skills",
+    "skills/plugins-claude/skill-inspector",
+    "skills/mati-cuenta/skill-creator"
+  ],
+  "redes": [
+    "skills/plugins-claude/social-media-skills",
+    "skills/plugins-claude/marketing-skills",
+    "skills/plugins-claude/marketing",
+    "skills/plugins-claude/small-business",
+    "skills/plugins-claude/posty",
+    "skills/mati-pc/linkedin-skills"
+  ],
+  "seo": [
+    "skills/plugins-claude/searchfit-seo"
+  ],
+  "video": [
+    "skills/plugins-claude/video-skills",
+    "skills/mati-pc/remotion-editor",
+    "skills/mati-pc/claude-skills/editar-reels-claude",
+    "skills/mati-pc/claude-skills/motion-graphics-claude",
+    "skills/mati-pc/claude-skills/animaciones",
+    "skills/mati-pc/claude-skills/produccion-contenido",
+    "skills/mati-pc/claude-skills/watch"
+  ],
+  "web-diseno": [
+    "skills/plugins-claude/taste-skill",
+    "skills/plugins-claude/emil-skills",
+    "skills/plugins-claude/design",
+    "skills/mati-pc/contenido-minero-programa",
+    "skills/mati-pc/claude-skills/frontend-design",
+    "skills/mati-pc/claude-skills/frontend-ui-engineering",
+    "skills/mati-pc/claude-skills/canvas-design",
+    "skills/mati-pc/claude-skills/theme-factory"
+  ],
+  "documentos": [
+    "skills/mati-cuenta/docx",
+    "skills/mati-cuenta/pdf",
+    "skills/mati-cuenta/pptx",
+    "skills/mati-cuenta/xlsx",
+    "skills/mati-cuenta/docs",
+    "skills/mati-cuenta/google-workspace"
+  ],
+  "datos": [
+    "skills/plugins-claude/data",
+    "skills/mati-pc/claude-skills/graphify",
+    "skills/mati-pc/claude-skills/last30days",
+    "skills/mati-pc/claude-skills/idea-refine"
+  ],
+  "desarrollo": [
+    "skills/plugins-claude/engineering",
+    "skills/plugins-claude/productivity",
+    "skills/plugins-claude/desktop-commander",
+    "skills/plugins-claude/cowork-plugin-management",
+    "skills/mati-pc/playwright"
+  ],
+  "manifold": [
+    "skills/plugins-claude/manifold"
+  ],
+  "extras-cuenta": [
+    "skills/mati-cuenta/import-memory",
+    "skills/mati-cuenta/morning",
+    "skills/mati-cuenta/video-making"
+  ],
+  "anthropic": [
+    "skills/anthropic-ejemplos",
+    "skills/anthropic-public"
+  ],
+  "todo": [
+    "skills/proyecto",
+    "skills/plugins-claude",
+    "skills/mati-cuenta",
+    "skills/mati-pc",
+    "skills/anthropic-ejemplos",
+    "skills/anthropic-public"
+  ],
+  "personal": [
+    "personal"
+  ]
+}

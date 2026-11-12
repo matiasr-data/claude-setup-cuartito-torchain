@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- Ejemplo «reel-palabra-clave» · motion-graphics-claude · familia 5 (reels con persona hablando)
+     Palabras clave grandes, con su icono dibujado, que entran JUSTO cuando la persona las dice (0,12 s antes) y salen al revés.
+     Siempre en la zona libre (debajo o encima de la cara, dentro de la zona segura de Reels): nunca tapan la cara.
+     Necesita: python scripts/reel.py preparar <tu-video.mp4>   (deja recursos/toma.mp4, palabras.json y cara.json)
+     Parámetros (bloque params): "claves": [{palabra (la que se dice), texto (*palabra* = color de acento), icono}]
+       iconos: play, pausa, check, cruz, flecha, izquierda, derecha, abajo, arriba, mas, menos, punto, estrella
+       "detras" (AVANZADO): {palabra, texto} palabra gigante DETRÁS de la cabeza. Solo sale si existe recursos/toma-mascara.mp4
+       (la persona recortada en blanco sobre negro); si no existe, se salta y la escena funciona igual.
+     Render simple: node scripts/render.mjs video reel-palabra-clave --calidad hd --transparente → python scripts/reel.py componer reel-palabra-clave
+     Capas para editar-reels-claude: python scripts/reel.py capas reel-palabra-clave (detras.mov + delante.mov + plan.json) -->
+<link rel="stylesheet" href="../motor/estilo.css">
+<script src="../motor/kit-escenas.js"></script>
+<script src="../motor/motor.js"></script>
+<script src="../motor/reel.js"></script>
+<style>
+  .detras { font:900 300px/0.9 var(--fuente-titulo, var(--fuente)); letter-spacing:-.05em; color:var(--acento); white-space:nowrap; text-align:center; width:1080px; }
+</style>
+</head><body>
+<script id="params" type="application/json">
+{
+  "claves": [
+    { "palabra": "Duet",         "texto": "Claude *Duet*",   "icono": "estrella" },
+    { "palabra": "trabaja",      "texto": "Trabaja *solo*",  "icono": "play" },
+    { "palabra": "proactiva",    "texto": "*Proactiva*",     "icono": "flecha" },
+    { "palabra": "aplicaciones", "texto": "Todas tus *apps*", "icono": "mas" },
+    { "palabra": "aviso",        "texto": "Te *avisa*",      "icono": "punto" }
+  ],
+  "detras": { "palabra": "nivel", "texto": "NIVEL" }
+}
+</script>
+<script>
+const P = JSON.parse(document.getElementById('params').textContent);
+escena({ duracion: REEL.dur, ancho: 1080, alto: 1920, fondo: REEL.capa ? 'transparente' : 'marca' }, (MG) => {
+  REEL.persona(MG);
+  // cada clave: cuándo se dice; las que no se dicen en la toma se saltan
+  const claves = P.claves.map((c) => ({ ...c, t0: REEL.t(c.palabra) })).filter((c) => c.t0 !== null).sort((a, b) => a.t0 - b.t0);
+  claves.forEach((c, i) => {
+    c.el = MG.el(`<div class="mg-abs reel-clave"><span class="reel-ico">${VK.icono(c.icono || 'check', 56, 'currentColor')}</span><span>${c.texto.replace(/\*([^*]+)\*/g, '<em>$1</em>')}</span></div>`);
+    const siguiente = claves[i + 1] ? claves[i + 1].t0 - 0.12 : Infinity;
+    c.t1 = Math.min(c.t0 + 2.1, siguiente - 0.4, REEL.dur - 0.4);   // se va antes de que entre la siguiente: nunca se pisan
+    REEL.apunta({ tipo: 'palabra-clave', texto: c.texto, palabra: c.palabra, desde: c.t0 - 0.12, hasta: c.t1 + 0.35 });
+  });
+  // texto detrás de la cabeza (avanzado): solo con recursos/toma-mascara.mp4
+  let detras = null, tD = null;
+  if (P.detras && (tD = REEL.t(P.detras.palabra)) !== null) {
+    // en capas (#detras, para editar-reels-claude) la persona recortada la pone su make_base; aquí, con la máscara
+    const recorte = REEL.modo ? null : REEL.recorte(MG);
+    if (recorte || REEL.modo) { detras = MG.el(`<div class="mg-abs detras reel-detras">${P.detras.texto}</div>`); REEL.apunta({ tipo: 'texto-detras', texto: P.detras.texto, palabra: P.detras.palabra, capa: 'detras', desde: tD - 0.15, hasta: tD + 2.15 }); }
+  }
+  return (t) => {
+    for (const c of claves) {
+      const w = c.el.offsetWidth, h = c.el.offsetHeight, y = REEL.zonaLibre(h);
+      if (t < c.t0 - 0.12 || t > c.t1 + 0.4) { c.el.style.opacity = 0; continue; }
+      const e = MG.entra(c.el, t, c.t0 - 0.12, { dy: 90, escala0: 0.82, curva: 'salidaQuint', d: 0.45 });
+      const s = REEL.sale(MG, c.el, t, c.t1, { dy: -70 });
+      MG.pon(c.el, (1080 - w) / 2 + e.x + s.x, y + e.y + s.y, e.s * s.s);
+      c.el.style.opacity = Math.min(+c.el.style.opacity, s.op);
+    }
+    if (detras) {   // la cabeza tapa ~20 % de la palabra: se coloca a la altura de la frente
+      const e = MG.entra(detras, t, tD - 0.15, { dy: 160, escala0: 0.9, curva: 'salidaQuint', d: 0.6 });
+      const s = REEL.sale(MG, detras, t, tD + 1.8, { dy: -120 });
+      MG.pon(detras, e.x, REEL.cara.y - 120 + e.y + s.y, e.s * s.s); detras.style.opacity = Math.min(+detras.style.opacity, s.op);
+    }
+  };
+});
+</script>
+</body></html>

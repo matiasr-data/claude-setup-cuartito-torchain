@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- Ejemplo «reel-tarjetas-lado» · motion-graphics-claude · familia 5 (reels con persona hablando)
+     Tarjetas de cristal en 3D (girada hacia la persona, con desenfoque de movimiento) que entran AL LADO de la persona
+     cuando nombra una herramienta o una idea, alternando izquierda y derecha, siempre debajo de la barbilla.
+     Parámetros: "tarjetas": [{palabra, titulo, sub, logo (ruta a un SVG/PNG) o icono}]
+     Necesita: python scripts/reel.py preparar <tu-video.mp4>
+     Render simple: node scripts/render.mjs video reel-tarjetas-lado --calidad hd --transparente → python scripts/reel.py componer reel-tarjetas-lado
+     Capas para editar-reels-claude: python scripts/reel.py capas reel-tarjetas-lado -->
+<link rel="stylesheet" href="../motor/estilo.css">
+<script src="../motor/kit-escenas.js"></script>
+<script src="../motor/motor.js"></script>
+<script src="../motor/reel.js"></script>
+</head><body>
+<script id="params" type="application/json">
+{
+  "tarjetas": [
+    { "palabra": "Duet",         "titulo": "Claude Duet",   "sub": "Nuevo agente de Anthropic", "logo": "../motor/logos/claude.svg" },
+    { "palabra": "proactiva",    "titulo": "Proactiva",     "sub": "Empieza sin que se lo pidas", "icono": "play" },
+    { "palabra": "aplicaciones", "titulo": "Gmail",         "sub": "Lee tus correos",            "logo": "../motor/logos/gmail.svg" },
+    { "palabra": "aviso",        "titulo": "Aviso",         "sub": "Solo lo importante",          "icono": "punto" }
+  ]
+}
+</script>
+<script>
+const P = JSON.parse(document.getElementById('params').textContent);
+escena({ duracion: REEL.dur, ancho: 1080, alto: 1920, fondo: REEL.capa ? 'transparente' : 'marca' }, (MG) => {
+  REEL.persona(MG);
+  MG.mundo.style.perspective = '1400px';
+  const ts = P.tarjetas.map((c) => ({ ...c, t0: REEL.t(c.palabra) })).filter((c) => c.t0 !== null).sort((a, b) => a.t0 - b.t0);
+  ts.forEach((c, i) => {
+    const ico = c.logo ? `<img src="${c.logo}">` : `<span class="reel-ico">${VK.icono(c.icono || 'check', 36, 'currentColor')}</span>`;
+    c.el = MG.el(`<div class="mg-abs reel-tarjeta"><div class="cab">${ico}<span>${c.titulo}</span></div><div class="sub">${c.sub}</div></div>`);
+    c.lado = i % 2 ? 1 : -1;                                       // -1 izquierda, 1 derecha
+    const sig = ts[i + 1] ? ts[i + 1].t0 - 0.1 : Infinity;
+    c.t1 = Math.min(c.t0 + 2.4, sig + 0.6, REEL.dur - 0.45);       // la anterior se va mientras entra la siguiente, del otro lado
+    REEL.apunta({ tipo: 'tarjeta', texto: c.titulo, palabra: c.palabra, desde: c.t0 - 0.15, hasta: c.t1 + 0.4 });
+  });
+  return (t) => {
+    for (const c of ts) {
+      if (t < c.t0 - 0.15 || t > c.t1 + 0.45) { c.el.style.opacity = 0; continue; }
+      const w = c.el.offsetWidth, h = c.el.offsetHeight;
+      const x = c.lado < 0 ? 60 : 1080 - 60 - w, y = REEL.zonaLibre(h) + 20;
+      const e = MG.entra(c.el, t, c.t0 - 0.15, { dx: 520 * c.lado, dy: 0, escala0: 0.9, d: 0.55 });   // rebote natural
+      const s = REEL.sale(MG, c.el, t, c.t1, { dx: 420 * c.lado, dy: 0 });
+      const giro = -c.lado * (10 + 28 * (1 - e.p) + 25 * s.p);       // mira hacia la persona; gira más mientras viaja
+      MG.pon(c.el, x + e.x + s.x, y + e.y, e.s * s.s, `rotateY(${giro}deg)`);
+      c.el.style.opacity = Math.min(+c.el.style.opacity, s.op);
+    }
+  };
+});
+</script>
+</body></html>

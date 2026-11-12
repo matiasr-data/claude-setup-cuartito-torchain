@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- Ejemplo «flujo-nodos» · motion-graphics-claude. Diagrama de nodos de cristal: herramienta → 3 pasos con ✓ → resultado.
+     Rehecho en la auditoría del 27-10-2026 con las reglas del kit:
+       · los nodos del diagrama ENTRAN JUNTOS (MG.juntos, ≤ 0,5 s) y luego se DESTACA cada uno cuando se nombra (borde coral + ✓);
+       · las líneas son MG.conecta(a, b): se miden en cada fotograma y SIEMPRE tocan los nodos, aunque reboten o se muevan;
+       · las líneas se dibujan cuando los dos nodos ya están (nunca hacia un hueco vacío);
+       · todo cabe en pantalla: la cámara no tiene que ir a buscar nada (zoom lineal que nunca se para).
+     Cambia textos, tarjetas (vid/…) y los instantes de NOMBRA (la palabra que nombra cada paso). Comprueba con:
+       node scripts/render.mjs comprobar flujo-nodos -->
+<link rel="stylesheet" href="../motor/estilo.css">
+<link rel="stylesheet" href="ejemplos.css">
+<script src="../motor/kit-escenas.js"></script>
+<script src="../motor/motor.js"></script>
+</head><body>
+<script>
+escena({ duracion: 8.45, ancho: 1920, alto: 1080, fondo: 'marca' }, (MG) => {
+  const { k, lerp, pon, entra, desenfoca } = MG, C = MG.curvas;
+  const nodo = (ic, b, s, extra = '') => MG.el(`<div class="nodo abs"><div class="ic" style="background:var(--superficie)">${ic}</div><div><b>${b}</b><small>${s}</small></div>${extra}</div>`);
+  const n1 = MG.el(`<div class="nodo abs"><div class="ic"><img src="claude-code-logo.svg"></div><div><b>Skill · motion-graphics-claude</b><small>la preparé para ti · Opus 5.5</small></div></div>`);
+  const herr = [['HTML', 'las animaciones de cada slide'], ['Playwright', 'fotografía cada fotograma'], ['FFmpeg', 'los MP4 con sonido y música']]
+    .map(([b, s]) => nodo(`<span style="font-weight:800;color:var(--acento);font-size:22px">${b[0]}</span>`, b, s, '<div class="ck"></div>'));
+  const res = MG.el(`<div class="nodo abs"><div class="ic" style="background:var(--acento);color:var(--tinta)">${VK.icono('check', 30, 'currentColor')}</div><div><b>Carrusel listo</b><small>slides animados · con sonido</small></div></div>`);
+  const sl = [1, 2, 3, 4, 5].map((n, i) => MG.tarjeta(`vid/10-${n}.mp4`, 136, 170, 5.0 + i * .1, { desde: .9 }));
+  const NODOS = [n1, ...herr, res];
+  // 1) entran JUNTOS (escalonado corto) · 2) las líneas, cuando ya están · 3) cada paso se destaca al nombrarlo
+  const ENTRA = MG.juntos(NODOS.length, .35, .07);
+  const NOMBRA = [2.6, 3.2, 3.8];   // la palabra que nombra cada herramienta (con voz: los tiempos de palabras-final.json)
+  const lineas = [...herr.map((h) => MG.conecta(n1, h)), ...herr.map((h) => MG.conecta(h, res))];
+  const pulso = MG.el(`<div class="abs" style="width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 0 24px 6px rgba(var(--halo),.9)"></div>`);
+  let G = null;   // posiciones de reposo: se miden UNA vez con los anchos reales (los textos cambian de largo)
+  const mide = () => {
+    const w1 = n1.offsetWidth, wh = Math.max(...herr.map((h) => h.offsetWidth)), wr = res.offsetWidth, hueco = 150;
+    const total = w1 + hueco + wh + hueco + wr, x0 = (1920 - total) / 2, Y = 470;
+    G = { x1: x0, xh: x0 + w1 + hueco, xr: x0 + w1 + hueco + wh + hueco, Y, h: n1.offsetHeight, ys: [-170, 0, 170].map((d) => Y + d) };
+  };
+  return (t) => {
+    if (!G) mide();
+    MG.camara(t, 1.0, 1.08, 960, 500);   // la cámara nunca se para
+    let e = entra(n1, t, ENTRA[0], { dx: -160, dy: 0 }); pon(n1, G.x1 + e.x, G.Y - G.h / 2 + e.y, e.s);
+    herr.forEach((n, i) => {
+      const e2 = entra(n, t, ENTRA[1 + i], { dx: 0, dy: 90 }); pon(n, G.xh + e2.x, G.ys[i] - G.h / 2 + e2.y, e2.s);
+      // destacar al nombrarlo: borde y brillo coral + ✓ con rebote (antes: el nodo aparecía en ese momento, solo en el vacío)
+      const on = t >= NOMBRA[i], c = n.querySelector('.ck'), h = C.atras(k(t, NOMBRA[i], NOMBRA[i] + .35));
+      const brilla = on && t < NOMBRA[i] + 1.1;
+      n.style.borderColor = brilla ? 'rgba(var(--halo),.9)' : ''; n.style.boxShadow = brilla ? '0 18px 50px rgba(0,0,0,.45), 0 0 60px rgba(var(--halo),.45)' : '';
+      c.innerHTML = on ? VK.icono('check', 22, 'var(--tinta)') : '';
+      c.style.background = on ? 'var(--acento)' : 'transparent'; c.style.border = on ? '0' : '2.5px solid rgba(var(--claro),.35)';
+      c.style.borderRightColor = on ? '' : 'transparent'; c.style.transform = `scale(${on ? h : 1}) rotate(${on ? 0 : t * 400}deg)`;
+    });
+    e = entra(res, t, ENTRA[4], { dx: 160, dy: 0 }); pon(res, G.xr + e.x, G.Y - G.h / 2 + e.y, e.s);
+    // las líneas: después de que los nodos se posen, y medidas en este fotograma (siempre pegadas a los bordes)
+    lineas.forEach((l, i) => l.pinta(C.entradaSalidaQuint(k(t, 1.15 + (i % 3) * .06 + (i >= 3 ? .35 : 0), 1.75 + (i % 3) * .06 + (i >= 3 ? .35 : 0)))));
+    res.style.borderColor = t >= 4.4 ? 'rgba(var(--halo),.9)' : ''; res.style.boxShadow = t >= 4.4 ? '0 18px 50px rgba(0,0,0,.45), 0 0 70px rgba(var(--halo),.5)' : '';
+    // pulso que recorre el flujo por las líneas (n1 → Playwright → resultado), con desenfoque según su velocidad
+    const u = C.entradaSalidaQuint(k(t, 3.95, 4.7)), uq = C.entradaSalidaQuint(k(t - MG.DT, 3.95, 4.7));
+    const pt = (v) => (v < .5 ? lineas[1].punto(v * 2) : lineas[4].punto(v * 2 - 1)), p = pt(u), q = pt(uq);
+    pulso.style.opacity = u > 0 && u < 1 ? 1 : 0; pon(pulso, p.x - 10, p.y - 10);
+    desenfoca(pulso, Math.abs(p.x - q.x) / MG.DT * MG.MB, Math.abs(p.y - q.y) / MG.DT * MG.MB);
+    // las slides salen del resultado y se abren en abanico debajo
+    sl.forEach((c, i) => {
+      const e3 = entra(c, t, 5.0 + i * .08, { dx: 0, dy: -60, escala0: .7 }), ab = C.rebote(k(t, 5.4, 6.4));
+      // debajo del diagrama (nunca encima de un nodo) y siempre dentro del encuadre, con margen para el zoom de la cámara
+      const centro = Math.min(G.xr + res.offsetWidth / 2, 1920 - 120 - 2 * 150 - 68), cx = centro - 68 + lerp(0, (i - 2) * 150, ab);
+      pon(c, cx + e3.x, G.Y + 250 + e3.y + Math.abs(i - 2) * lerp(0, 12, ab), e3.s, `rotate(${lerp(0, (i - 2) * 5, ab)}deg)`); c.style.zIndex = 10 + i;
+    });
+  };
+});
+</script>
+</body></html>

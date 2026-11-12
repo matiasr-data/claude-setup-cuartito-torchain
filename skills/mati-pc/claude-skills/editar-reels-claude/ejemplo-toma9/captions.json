@@ -1,0 +1,977 @@
+[
+ {
+  "text": "Este reel está",
+  "key": false,
+  "phrase": 0,
+  "start": 0.0,
+  "end": 0.78,
+  "words": [
+   {
+    "w": "Este",
+    "t": 0.0
+   },
+   {
+    "w": "reel",
+    "t": 0.34
+   },
+   {
+    "w": "está",
+    "t": 0.58
+   }
+  ]
+ },
+ {
+  "text": "siendo editado al",
+  "key": false,
+  "phrase": 0,
+  "start": 0.78,
+  "end": 1.66,
+  "words": [
+   {
+    "w": "siendo",
+    "t": 0.78
+   },
+   {
+    "w": "editado",
+    "t": 1.14
+   },
+   {
+    "w": "al",
+    "t": 1.48
+   }
+  ]
+ },
+ {
+  "text": "100 %",
+  "key": true,
+  "phrase": 0,
+  "start": 1.66,
+  "end": 2.38,
+  "words": [
+   {
+    "w": "100",
+    "t": 1.66
+   },
+   {
+    "w": "%",
+    "t": 1.92
+   }
+  ]
+ },
+ {
+  "text": "por Claude",
+  "key": false,
+  "phrase": 0,
+  "start": 2.38,
+  "end": 3.14,
+  "words": [
+   {
+    "w": "por",
+    "t": 2.38
+   },
+   {
+    "w": "Claude",
+    "t": 2.76
+   }
+  ]
+ },
+ {
+  "text": "Opus 5.5",
+  "key": false,
+  "phrase": 0,
+  "start": 3.14,
+  "end": 4.47,
+  "words": [
+   {
+    "w": "Opus",
+    "t": 3.14
+   },
+   {
+    "w": "5.5",
+    "t": 3.74
+   }
+  ]
+ },
+ {
+  "text": "Y lo mejor",
+  "key": false,
+  "phrase": 1,
+  "start": 4.867,
+  "end": 5.313,
+  "words": [
+   {
+    "w": "Y",
+    "t": 4.867
+   },
+   {
+    "w": "lo",
+    "t": 5.073
+   },
+   {
+    "w": "mejor",
+    "t": 5.153
+   }
+  ]
+ },
+ {
+  "text": "de todo",
+  "key": false,
+  "phrase": 1,
+  "start": 5.313,
+  "end": 5.713,
+  "words": [
+   {
+    "w": "de",
+    "t": 5.313
+   },
+   {
+    "w": "todo",
+    "t": 5.453
+   }
+  ]
+ },
+ {
+  "text": "es que pasa",
+  "key": false,
+  "phrase": 1,
+  "start": 5.713,
+  "end": 6.113,
+  "words": [
+   {
+    "w": "es",
+    "t": 5.713
+   },
+   {
+    "w": "que",
+    "t": 5.713
+   },
+   {
+    "w": "pasa",
+    "t": 5.793
+   }
+  ]
+ },
+ {
+  "text": "de manera automática",
+  "key": false,
+  "phrase": 1,
+  "start": 6.113,
+  "end": 7.393,
+  "words": [
+   {
+    "w": "de",
+    "t": 6.113
+   },
+   {
+    "w": "manera",
+    "t": 6.173
+   },
+   {
+    "w": "automática",
+    "t": 6.473
+   }
+  ]
+ },
+ {
+  "text": "dentro de",
+  "key": false,
+  "phrase": 1,
+  "start": 7.393,
+  "end": 8.453,
+  "words": [
+   {
+    "w": "dentro",
+    "t": 7.393
+   },
+   {
+    "w": "de",
+    "t": 7.993
+   }
+  ]
+ },
+ {
+  "text": "Claude Code",
+  "key": true,
+  "phrase": 1,
+  "start": 8.453,
+  "end": 9.093,
+  "words": [
+   {
+    "w": "Claude",
+    "t": 8.453
+   },
+   {
+    "w": "Code",
+    "t": 8.793
+   }
+  ]
+ },
+ {
+  "text": "No tienes que",
+  "key": false,
+  "phrase": 2,
+  "start": 9.093,
+  "end": 9.673,
+  "words": [
+   {
+    "w": "No",
+    "t": 9.093
+   },
+   {
+    "w": "tienes",
+    "t": 9.293
+   },
+   {
+    "w": "que",
+    "t": 9.553
+   }
+  ]
+ },
+ {
+  "text": "abrir ningún",
+  "key": false,
+  "phrase": 2,
+  "start": 9.673,
+  "end": 10.433,
+  "words": [
+   {
+    "w": "abrir",
+    "t": 9.673
+   },
+   {
+    "w": "ningún",
+    "t": 9.873
+   }
+  ]
+ },
+ {
+  "text": "editor",
+  "key": true,
+  "phrase": 2,
+  "start": 10.433,
+  "end": 10.833,
+  "words": [
+   {
+    "w": "editor",
+    "t": 10.433
+   }
+  ]
+ },
+ {
+  "text": "de vídeos",
+  "key": false,
+  "phrase": 2,
+  "start": 10.833,
+  "end": 11.533,
+  "words": [
+   {
+    "w": "de",
+    "t": 10.833
+   },
+   {
+    "w": "vídeos",
+    "t": 10.993
+   }
+  ]
+ },
+ {
+  "text": "Es capaz de",
+  "key": false,
+  "phrase": 3,
+  "start": 11.533,
+  "end": 12.28,
+  "words": [
+   {
+    "w": "Es",
+    "t": 11.533
+   },
+   {
+    "w": "capaz",
+    "t": 11.76
+   },
+   {
+    "w": "de",
+    "t": 12.06
+   }
+  ]
+ },
+ {
+  "text": "quitar los",
+  "key": false,
+  "phrase": 3,
+  "start": 12.28,
+  "end": 12.8,
+  "words": [
+   {
+    "w": "quitar",
+    "t": 12.28
+   },
+   {
+    "w": "los",
+    "t": 12.64
+   }
+  ]
+ },
+ {
+  "text": "silencios",
+  "key": true,
+  "phrase": 3,
+  "start": 12.8,
+  "end": 13.38,
+  "words": [
+   {
+    "w": "silencios",
+    "t": 12.8
+   }
+  ]
+ },
+ {
+  "text": "quitar",
+  "key": false,
+  "phrase": 4,
+  "start": 13.38,
+  "end": 13.78,
+  "words": [
+   {
+    "w": "quitar",
+    "t": 13.38
+   }
+  ]
+ },
+ {
+  "text": "falsas tomas",
+  "key": true,
+  "phrase": 4,
+  "start": 13.78,
+  "end": 14.56,
+  "words": [
+   {
+    "w": "falsas",
+    "t": 13.780000000000001
+   },
+   {
+    "w": "tomas",
+    "t": 13.96
+   }
+  ]
+ },
+ {
+  "text": "agregar",
+  "key": false,
+  "phrase": 5,
+  "start": 14.56,
+  "end": 14.96,
+  "words": [
+   {
+    "w": "agregar",
+    "t": 14.56
+   }
+  ]
+ },
+ {
+  "text": "subtítulos",
+  "key": true,
+  "phrase": 5,
+  "start": 14.96,
+  "end": 15.8,
+  "words": [
+   {
+    "w": "subtítulos",
+    "t": 14.96
+   }
+  ]
+ },
+ {
+  "text": "hacer",
+  "key": false,
+  "phrase": 6,
+  "start": 15.8,
+  "end": 16.2,
+  "words": [
+   {
+    "w": "hacer",
+    "t": 15.8
+   }
+  ]
+ },
+ {
+  "text": "motion graphics",
+  "key": true,
+  "phrase": 6,
+  "start": 16.2,
+  "end": 16.76,
+  "words": [
+   {
+    "w": "motion",
+    "t": 16.2
+   },
+   {
+    "w": "graphics",
+    "t": 16.34
+   }
+  ]
+ },
+ {
+  "text": "y todo pasa",
+  "key": false,
+  "phrase": 7,
+  "start": 16.76,
+  "end": 18.2,
+  "words": [
+   {
+    "w": "y",
+    "t": 16.76
+   },
+   {
+    "w": "todo",
+    "t": 17.32
+   },
+   {
+    "w": "pasa",
+    "t": 17.62
+   }
+  ]
+ },
+ {
+  "text": "de manera",
+  "key": false,
+  "phrase": 7,
+  "start": 18.2,
+  "end": 18.74,
+  "words": [
+   {
+    "w": "de",
+    "t": 18.2
+   },
+   {
+    "w": "manera",
+    "t": 18.42
+   }
+  ]
+ },
+ {
+  "text": "automática",
+  "key": true,
+  "phrase": 7,
+  "start": 18.74,
+  "end": 19.867,
+  "words": [
+   {
+    "w": "automática",
+    "t": 18.74
+   }
+  ]
+ },
+ {
+  "text": "y lo mejor",
+  "key": false,
+  "phrase": 8,
+  "start": 19.867,
+  "end": 20.347,
+  "words": [
+   {
+    "w": "y",
+    "t": 19.867
+   },
+   {
+    "w": "lo",
+    "t": 20.127
+   },
+   {
+    "w": "mejor",
+    "t": 20.207
+   }
+  ]
+ },
+ {
+  "text": "de todo",
+  "key": false,
+  "phrase": 8,
+  "start": 20.347,
+  "end": 20.747,
+  "words": [
+   {
+    "w": "de",
+    "t": 20.347
+   },
+   {
+    "w": "todo",
+    "t": 20.467
+   }
+  ]
+ },
+ {
+  "text": "es que si",
+  "key": false,
+  "phrase": 8,
+  "start": 20.747,
+  "end": 21.147,
+  "words": [
+   {
+    "w": "es",
+    "t": 20.747
+   },
+   {
+    "w": "que",
+    "t": 20.827
+   },
+   {
+    "w": "si",
+    "t": 20.927
+   }
+  ]
+ },
+ {
+  "text": "necesitas hacer",
+  "key": false,
+  "phrase": 8,
+  "start": 21.147,
+  "end": 21.687,
+  "words": [
+   {
+    "w": "necesitas",
+    "t": 21.147
+   },
+   {
+    "w": "hacer",
+    "t": 21.467
+   }
+  ]
+ },
+ {
+  "text": "alguna corrección",
+  "key": false,
+  "phrase": 8,
+  "start": 21.687,
+  "end": 22.387,
+  "words": [
+   {
+    "w": "alguna",
+    "t": 21.687
+   },
+   {
+    "w": "corrección",
+    "t": 21.927
+   }
+  ]
+ },
+ {
+  "text": "se lo dices",
+  "key": false,
+  "phrase": 8,
+  "start": 22.387,
+  "end": 23.047,
+  "words": [
+   {
+    "w": "se",
+    "t": 22.387
+   },
+   {
+    "w": "lo",
+    "t": 22.607
+   },
+   {
+    "w": "dices",
+    "t": 22.707
+   }
+  ]
+ },
+ {
+  "text": "y lo hace",
+  "key": true,
+  "phrase": 8,
+  "start": 23.047,
+  "end": 23.833,
+  "words": [
+   {
+    "w": "y",
+    "t": 23.047
+   },
+   {
+    "w": "lo",
+    "t": 23.367
+   },
+   {
+    "w": "hace",
+    "t": 23.507
+   }
+  ]
+ },
+ {
+  "text": "y es",
+  "key": false,
+  "phrase": 9,
+  "start": 23.833,
+  "end": 24.253,
+  "words": [
+   {
+    "w": "y",
+    "t": 23.833
+   },
+   {
+    "w": "es",
+    "t": 24.153
+   }
+  ]
+ },
+ {
+  "text": "por eso",
+  "key": false,
+  "phrase": 9,
+  "start": 24.253,
+  "end": 24.653,
+  "words": [
+   {
+    "w": "por",
+    "t": 24.253
+   },
+   {
+    "w": "eso",
+    "t": 24.373
+   }
+  ]
+ },
+ {
+  "text": "que preparé una",
+  "key": false,
+  "phrase": 9,
+  "start": 24.653,
+  "end": 25.553,
+  "words": [
+   {
+    "w": "que",
+    "t": 24.653
+   },
+   {
+    "w": "preparé",
+    "t": 24.733
+   },
+   {
+    "w": "una",
+    "t": 25.193
+   }
+  ]
+ },
+ {
+  "text": "guía",
+  "key": true,
+  "phrase": 9,
+  "start": 25.553,
+  "end": 25.953,
+  "words": [
+   {
+    "w": "guía",
+    "t": 25.553
+   }
+  ]
+ },
+ {
+  "text": "paso a paso",
+  "key": false,
+  "phrase": 9,
+  "start": 25.953,
+  "end": 26.933,
+  "words": [
+   {
+    "w": "paso",
+    "t": 25.953
+   },
+   {
+    "w": "a",
+    "t": 26.533
+   },
+   {
+    "w": "paso",
+    "t": 26.673
+   }
+  ]
+ },
+ {
+  "text": "con todos los",
+  "key": false,
+  "phrase": 10,
+  "start": 26.933,
+  "end": 27.633,
+  "words": [
+   {
+    "w": "con",
+    "t": 26.933
+   },
+   {
+    "w": "todos",
+    "t": 27.193
+   },
+   {
+    "w": "los",
+    "t": 27.433
+   }
+  ]
+ },
+ {
+  "text": "prompts y las",
+  "key": false,
+  "phrase": 10,
+  "start": 27.633,
+  "end": 28.373,
+  "words": [
+   {
+    "w": "prompts",
+    "t": 27.633
+   },
+   {
+    "w": "y",
+    "t": 27.913
+   },
+   {
+    "w": "las",
+    "t": 28.193
+   }
+  ]
+ },
+ {
+  "text": "skills",
+  "key": true,
+  "phrase": 10,
+  "start": 28.373,
+  "end": 28.773,
+  "words": [
+   {
+    "w": "skills",
+    "t": 28.373
+   }
+  ]
+ },
+ {
+  "text": "necesarias para",
+  "key": false,
+  "phrase": 10,
+  "start": 28.773,
+  "end": 29.593,
+  "words": [
+   {
+    "w": "necesarias",
+    "t": 28.773
+   },
+   {
+    "w": "para",
+    "t": 29.333
+   }
+  ]
+ },
+ {
+  "text": "editar un vídeo",
+  "key": false,
+  "phrase": 10,
+  "start": 29.593,
+  "end": 30.393,
+  "words": [
+   {
+    "w": "editar",
+    "t": 29.593
+   },
+   {
+    "w": "un",
+    "t": 29.913
+   },
+   {
+    "w": "vídeo",
+    "t": 30.193
+   }
+  ]
+ },
+ {
+  "text": "como este",
+  "key": false,
+  "phrase": 10,
+  "start": 30.393,
+  "end": 31.1,
+  "words": [
+   {
+    "w": "como",
+    "t": 30.393
+   },
+   {
+    "w": "este",
+    "t": 30.673
+   }
+  ]
+ },
+ {
+  "text": "si quieres que",
+  "key": false,
+  "phrase": 11,
+  "start": 31.1,
+  "end": 31.587,
+  "words": [
+   {
+    "w": "si",
+    "t": 31.1
+   },
+   {
+    "w": "quieres",
+    "t": 31.307
+   },
+   {
+    "w": "que",
+    "t": 31.467
+   }
+  ]
+ },
+ {
+  "text": "te envíe el",
+  "key": false,
+  "phrase": 11,
+  "start": 31.587,
+  "end": 32.207,
+  "words": [
+   {
+    "w": "te",
+    "t": 31.587
+   },
+   {
+    "w": "envíe",
+    "t": 31.687
+   },
+   {
+    "w": "el",
+    "t": 31.967
+   }
+  ]
+ },
+ {
+  "text": "tutorial",
+  "key": true,
+  "phrase": 11,
+  "start": 32.207,
+  "end": 32.607,
+  "words": [
+   {
+    "w": "tutorial",
+    "t": 32.207
+   }
+  ]
+ },
+ {
+  "text": "completo y",
+  "key": false,
+  "phrase": 11,
+  "start": 32.607,
+  "end": 33.487,
+  "words": [
+   {
+    "w": "completo",
+    "t": 32.607
+   },
+   {
+    "w": "y",
+    "t": 33.147
+   }
+  ]
+ },
+ {
+  "text": "todas las skills",
+  "key": false,
+  "phrase": 11,
+  "start": 33.487,
+  "end": 34.247,
+  "words": [
+   {
+    "w": "todas",
+    "t": 33.487
+   },
+   {
+    "w": "las",
+    "t": 33.687
+   },
+   {
+    "w": "skills",
+    "t": 33.907
+   }
+  ]
+ },
+ {
+  "text": "y prompts",
+  "key": false,
+  "phrase": 11,
+  "start": 34.247,
+  "end": 35.067,
+  "words": [
+   {
+    "w": "y",
+    "t": 34.247
+   },
+   {
+    "w": "prompts",
+    "t": 34.647
+   }
+  ]
+ },
+ {
+  "text": "comenta",
+  "key": false,
+  "phrase": 12,
+  "start": 35.067,
+  "end": 35.653,
+  "words": [
+   {
+    "w": "comenta",
+    "t": 35.067
+   }
+  ]
+ },
+ {
+  "text": "Claude",
+  "key": true,
+  "phrase": 12,
+  "start": 35.653,
+  "end": 36.293,
+  "words": [
+   {
+    "w": "Claude",
+    "t": 35.653
+   }
+  ]
+ },
+ {
+  "text": "aquí debajo",
+  "key": false,
+  "phrase": 12,
+  "start": 36.293,
+  "end": 37.5,
+  "words": [
+   {
+    "w": "aquí",
+    "t": 36.293
+   },
+   {
+    "w": "debajo",
+    "t": 36.873
+   }
+  ]
+ },
+ {
+  "text": "y te lo envío",
+  "key": false,
+  "phrase": 12,
+  "start": 37.5,
+  "end": 38.3,
+  "words": [
+   {
+    "w": "y",
+    "t": 37.5
+   },
+   {
+    "w": "te",
+    "t": 37.72
+   },
+   {
+    "w": "lo",
+    "t": 37.82
+   },
+   {
+    "w": "envío",
+    "t": 37.92
+   }
+  ]
+ }
+]

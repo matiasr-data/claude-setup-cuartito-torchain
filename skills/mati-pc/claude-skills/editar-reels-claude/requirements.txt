@@ -1,0 +1,4 @@
+# Instala PyTorch primero desde https://pytorch.org (elige CUDA si tienes una GPU NVIDIA).
+openai-whisper>=20250625
+numpy>=1.26
+pillow>=10.0

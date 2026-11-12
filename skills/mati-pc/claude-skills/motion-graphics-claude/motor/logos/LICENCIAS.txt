@@ -1,0 +1,9 @@
+LOGOS DE ESTA CARPETA · nota de uso
+
+- claude.svg, claude-code.svg: logos de Claude / Claude Code (marcas de Anthropic). Úsalos solo para hablar de Claude
+  (tutoriales, reseñas, contenido sobre la herramienta). No los uses como si fueran tu marca ni para insinuar patrocinio.
+- youtube.svg, instagram.svg, tiktok.svg, gmail.svg: logos oficiales tomados de svgl.app. Son marcas registradas de sus
+  dueños (Google, Meta, ByteDance). Úsalos solo para referirte a esas plataformas, sin deformarlos ni cambiar sus colores.
+- Tu logo: ponlo en la carpeta recursos/ de tu proyecto (SVG o PNG) y pásalo a la escena (parámetro "logo").
+
+La mascota de Claude Code en 3D (motor/mascota3d.js) está dibujada en código con formas simples.

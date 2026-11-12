@@ -1,0 +1,335 @@
+1
+00:00:00,088 --> 00:00:02,728
+Todo lo que estás viendo
+en pantalla, los cortes,
+
+2
+00:00:02,748 --> 00:00:05,608
+los sonidos, las transiciones,
+los motion graphics,
+
+3
+00:00:05,628 --> 00:00:07,570
+los ha creado Claude.
+
+4
+00:00:07,590 --> 00:00:11,590
+Yo solo he instalado una skill una
+vez y me he olvidado para siempre.
+
+5
+00:00:11,610 --> 00:00:13,650
+Y te voy a ser totalmente sincero.
+
+6
+00:00:13,670 --> 00:00:17,570
+Todos los vídeos que vas a ver en
+YouTube sobre cómo editar con Claude
+
+7
+00:00:17,590 --> 00:00:20,223
+y CapCut tienen una pequeña trampa.
+
+8
+00:00:20,243 --> 00:00:23,955
+Y es que no son totalmente autónomos.
+
+9
+00:00:23,975 --> 00:00:24,975
+Y eso es una realidad.
+
+10
+00:00:24,995 --> 00:00:28,235
+Y es que la inteligencia artificial
+no está para sustituirte,
+
+11
+00:00:28,255 --> 00:00:31,928
+sino para que te apalanques de
+ella, ahorres tiempo y dinero.
+
+12
+00:00:31,948 --> 00:00:35,268
+Por eso, lo que te voy a
+enseñar aquí es a eso mismo,
+
+13
+00:00:35,288 --> 00:00:37,648
+a que ahorres tanto tiempo
+como dinero y, sobre todo,
+
+14
+00:00:37,668 --> 00:00:42,601
+aprendas una habilidad muy valiosa,
+que es editar vídeos con Claude.
+
+15
+00:00:42,621 --> 00:00:46,420
+Lo que te voy a enseñar aquí es para
+que tú, con tu criterio creativo,
+
+16
+00:00:46,440 --> 00:00:50,300
+que eso Claude no lo puede clonar,
+puedas coger esta skill que te voy
+
+17
+00:00:50,320 --> 00:00:54,840
+a dejar al final del vídeo y puedas
+transformar todas tus ideas en vídeos
+
+18
+00:00:54,860 --> 00:00:56,633
+como este en cuestión de minutos.
+
+19
+00:00:56,653 --> 00:01:00,513
+Y si alguna vez has intentado pagar
+algún editor para que edite alguno
+
+20
+00:01:00,533 --> 00:01:05,093
+de tus vlogs, vídeos, VSL o cualquier
+tipo de contenido que hayas querido
+
+21
+00:01:05,113 --> 00:01:07,766
+subir, has visto que lo bueno se paga.
+
+22
+00:01:07,786 --> 00:01:12,172
+Literalmente esta edición la he
+pensado para que no te tengas que dejar
+
+23
+00:01:12,192 --> 00:01:17,532
+100, 200, 300 hasta 500 dólares en
+editores, sino que sepas tú con tu
+
+24
+00:01:17,552 --> 00:01:22,501
+ordenador cómo hacerlo, incluso que
+puedas ofrecerlo también como servicio.
+
+25
+00:01:22,521 --> 00:01:24,854
+Si has entrado hasta
+aquí es por tres razones.
+
+26
+00:01:24,874 --> 00:01:29,434
+O bien, creas contenido, como yo hago
+y te gusta editar y ser mucho más
+
+27
+00:01:29,454 --> 00:01:30,921
+eficiente y no dejarte el dinero.
+
+28
+00:01:30,941 --> 00:01:35,221
+O bien, eres un creador que ya de
+por sí en tu negocio necesitas de las
+
+29
+00:01:35,241 --> 00:01:39,081
+redes sociales, por ejemplo, como
+contenido largo para poder editar vídeos
+
+30
+00:01:39,101 --> 00:01:42,901
+largos de manera escalable
+y sin vaciarte el bolsillo.
+
+31
+00:01:42,921 --> 00:01:47,901
+Y lo tercero es que trabajes con algún
+creador u editor y quieras implementar
+
+32
+00:01:47,921 --> 00:01:50,362
+la inteligencia dentro de
+tus procesos de marketing.
+
+33
+00:01:50,382 --> 00:01:54,442
+Seas el perfil que seas realmente o
+como si lo quieres aprender como hobby,
+
+34
+00:01:54,462 --> 00:01:59,822
+este es el mejor vídeo que vas a poder
+ver ahora mismo en 2026 en el mes
+
+35
+00:01:59,842 --> 00:02:03,782
+de septiembre, octubre, noviembre y
+diciembre sobre cómo editar vídeos
+
+36
+00:02:03,802 --> 00:02:05,688
+con Claude y CapCut.
+
+37
+00:02:05,708 --> 00:02:09,415
+Porque sí vas a tener que acabar
+utilizando CapCut si quieres al menos
+
+38
+00:02:09,435 --> 00:02:11,968
+un acabado 100% profesional.
+
+39
+00:02:11,988 --> 00:02:14,968
+Porque Claude lo que va a hacer es
+ahorrarte todo ese tiempo de cortes,
+
+40
+00:02:14,988 --> 00:02:19,125
+transiciones, sonidos, música, textos,
+Y tú luego vas a tener que darle
+
+41
+00:02:19,145 --> 00:02:22,451
+ese toque tuyo y ajustar
+algunas cositas en CapCut.
+
+42
+00:02:22,471 --> 00:02:26,151
+Pero lo que va a hacer es ahorrarte
+todo el tiempo que estaba dentro de
+
+43
+00:02:26,171 --> 00:02:27,648
+CapCut en cuestión de horas.
+
+44
+00:02:27,668 --> 00:02:33,234
+Y mira, para traerte este vídeo he
+estado horas y horas y horas consumiendo
+
+45
+00:02:33,254 --> 00:02:36,294
+tutoriales, viendo cómo
+funcionaba todo por dentro,
+
+46
+00:02:36,314 --> 00:02:40,594
+para poder entenderlo bien y
+traértelo de una manera sencilla,
+
+47
+00:02:40,614 --> 00:02:43,440
+explicada y que no tengas que
+estar rompiéndote la cabeza.
+
+48
+00:02:43,460 --> 00:02:46,440
+Literalmente te voy a dar el paso a
+paso sencillo para que tú desde tu
+
+49
+00:02:46,460 --> 00:02:50,127
+ordenador puedas crear vídeos
+como este en cuestión de horas.
+
+50
+00:02:50,147 --> 00:02:55,727
+Llevo 12 días pegado a la pantalla
+día y noche para poder sacar un vídeo
+
+51
+00:02:55,747 --> 00:03:00,699
+con un nivel de excelencia 200 para
+que tú no tengas que estar haciendo
+
+52
+00:03:00,719 --> 00:03:01,640
+todo ese trabajo.
+
+53
+00:03:01,660 --> 00:03:03,459
+Ya me he encargado yo de hacerlo.
+
+54
+00:03:03,479 --> 00:03:04,479
+Así que tranquilo.
+
+55
+00:03:04,499 --> 00:03:06,699
+Antes de nada, mi nombre es Pablo.
+
+56
+00:03:06,719 --> 00:03:11,759
+Llevo dentro del mundo online, de
+los negocios online casi dos años.
+
+57
+00:03:11,779 --> 00:03:14,819
+Normalmente me dedico a las ventas,
+pero hay algo dentro de mí que siempre
+
+58
+00:03:14,839 --> 00:03:17,419
+ha tirado por esa parte creativa,
+por esa parte del marketing.
+
+59
+00:03:17,439 --> 00:03:21,119
+De hecho, el ejemplo que vas a ver,
+vas a ver que no son vídeos míos,
+
+60
+00:03:21,139 --> 00:03:23,999
+sino que son vídeos, por
+ejemplo, de Mario, mi socio,
+
+61
+00:03:24,019 --> 00:03:26,079
+donde trabajo con la
+marca personal suya.
+
+62
+00:03:26,099 --> 00:03:29,799
+Pero bueno, aquí básicamente en el
+canal lo que vas a ver es si este vídeo
+
+63
+00:03:29,819 --> 00:03:33,419
+funciona, por supuesto, más cosas
+como esta, pero también mi día a día
+
+64
+00:03:33,439 --> 00:03:37,499
+emprendiendo en directo cómo
+es, cómo soy, cómo vivo.
+
+65
+00:03:37,519 --> 00:03:39,819
+Ahora mismo estoy en Bali
+junto a mis dos socios,
+
+66
+00:03:39,839 --> 00:03:41,279
+como con Miguel y Mario.
+
+67
+00:03:41,299 --> 00:03:44,319
+Así que te invito a que te
+suscribas porque me ayuda un montón,
+
+68
+00:03:44,339 --> 00:03:47,319
+no te cuesta absolutamente nada.
+
+69
+00:03:47,339 --> 00:03:52,279
+Y encima puedes hacer que este canal
+dispare y que este vídeo lo vea muchísima
+
+70
+00:03:52,299 --> 00:03:53,379
+más gente.
+
+71
+00:03:53,399 --> 00:03:53,533
+Gracias.

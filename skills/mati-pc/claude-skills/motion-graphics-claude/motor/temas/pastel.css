@@ -1,0 +1,9 @@
+/* Tema «Pastel» (estilo de la guía de motion graphics). Aplica con --tema pastel al renderizar, ?tema=pastel en la vista previa
+   o "tema": "pastel" en estilo.json. Tipografía: Nunito. Curva por defecto: reboteFuerte. Trama: puntos. */
+:root { --tema:'pastel'; --fondo:#FFF4EC; --fondo-rgb:255,244,236; --rejilla:#FBE7DA; --halo:255,143,171; --acento:#FF8FAB; --acento2:#7C6CF2;
+  --texto:#3A2E4A; --mute:#8B7E99; --tarjeta:#FFFFFF; --tarjeta2:#FFFFFF; --superficie:#FBE7DA; --tinta:#3A2E4A;
+  --claro:0,0,0; --sombra:60,50,80; --borde-tarjeta:rgba(124,108,242,.12); --sombra-tarjeta:rgba(124,108,242,.16);
+  --radio:28px; --fuente:'Nunito', 'Nunito', 'Inter', sans-serif; --fuente-titulo:'Nunito', 'Inter', sans-serif; --fuente-texto:'Nunito', 'Inter', sans-serif;
+  --curva:reboteFuerte; }
+.mg-fondo-marca { background: radial-gradient(60% 48% at 50% 112%, rgba(var(--halo), .26), rgba(var(--halo), .08) 45%, transparent 72%), radial-gradient(circle, var(--rejilla) 0 2.4px, transparent 3.4px) 0 0/40px 40px, var(--fondo); }
+.mg-tarjeta { border-radius: var(--radio); box-shadow: 0 26px 60px var(--sombra-tarjeta), 0 0 0 1px var(--borde-tarjeta); }
