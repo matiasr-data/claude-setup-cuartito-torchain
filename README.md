@@ -1,8 +1,8 @@
 # claude-setup-cuartito-torchain
 
-Repositorio privado para preparar Claude en la computadora de Tobías Perona (El Cuartito y Fundación Torchain): skills, instalador, prompt de arranque y plan inicial.
+Repositorio para preparar Claude en la computadora de Tobías Perona (El Cuartito y Fundación Torchain): skills, instalador, prompt de arranque y plan inicial.
 
-> Repositorio privado. Contiene el plan con datos de las organizaciones. No lo hagas público.
+> **Repositorio público TEMPORAL.** Está público solo para instalar las skills desde la computadora de Tobías sin iniciar sesión. Contiene el plan con datos de las organizaciones y skills de terceros con licencia propia. **Una vez instalado, pasarlo a privado o eliminarlo.**
 
 ## Qué hay adentro
 
@@ -26,7 +26,7 @@ Repositorio privado para preparar Claude en la computadora de Tobías Perona (El
    ```powershell
    git clone https://github.com/matiasr-data/claude-setup-cuartito-torchain.git
    ```
-   Como es privado, Git va a pedir iniciar sesión en GitHub con la cuenta de Mati (se abre el navegador). Alternativa: invitar a Tobías como colaborador de solo lectura, o bajar el ZIP desde GitHub con la sesión de Mati.
+   Como el repo es público, no hace falta iniciar sesión. Alternativa sin Git: en la página del repo, botón verde **Code → Download ZIP**.
 2. **Ver los packs:**
    ```powershell
    cd claude-setup-cuartito-torchain
@@ -40,7 +40,7 @@ Repositorio privado para preparar Claude en la computadora de Tobías Perona (El
    .\instalar.ps1 -Packs web-diseno,documentos     # para web y documentos
    ```
 4. Cerrar y volver a abrir Claude Code.
-5. **Al terminar:** cerrar la sesión de GitHub de Mati en esa PC (Administrador de credenciales de Windows, entradas `git:https://github.com`) y no dejar claves guardadas.
+5. **Al terminar:** pasar el repo a privado o eliminarlo (en GitHub: Settings → Danger Zone) y borrar la carpeta clonada de la PC de Tobías si no se va a seguir usando.
 
 ## Packs
 
@@ -61,4 +61,4 @@ Repositorio privado para preparar Claude en la computadora de Tobías Perona (El
 
 ## Licencias
 
-Las skills de terceros (plugins, Anthropic, Gemini, LinkedIn, etc.) conservan sus propias licencias y archivos `LICENSE`. Este repo es de uso privado para trabajar con el proyecto; no lo redistribuyas ni lo hagas público.
+Las skills de terceros (plugins, Anthropic, Gemini, LinkedIn, etc.) conservan sus propias licencias y archivos `LICENSE`. El repo está público solo de forma temporal para la instalación; no lo redistribuyas y volvelo privado o eliminalo después.
